@@ -13,7 +13,7 @@ The forecast profile is a collection of _forecastable profiles_. A forecastable 
 {% hint style="info" %}
 A good general rule of thumb to follow when designing a forecast is that **slower transitions tend to feel more natural**. If one second you have clear skies and the next it is a raging blizzard, it will feel very unnatural.
 
-You can use the [tag system](https://app.gitbook.com/o/8BSPwfZaF6QMPy2VJpaj/s/Ob7r9cp7YUzVvftisWP3/~/edit/~/changes/1/using-cozy/utilities/forecasting#tags) for easier categorization and rule creation
+You can use the [tag system](forecasting.md#tags) for easier categorization and rule creation
 {% endhint %}
 
 The forecast window is your best friend when it comes to creating forecasts. It abstracts all of the details of keeping track of which profiles can follow each other so that you can focus on your world building. To open the forecast window, select a [forecast-profile.md](../profiles/forecast-profile.md "mention") or create a new one (Assets/Create/Distant Lands/Cozy/Forecast Profile) and click edit forecast
@@ -32,7 +32,7 @@ On the right, you can adjust the weather profile's description, icon, and tag as
 
 A forecasting rule defines a subset of forecastable profiles and a relationship to the preceding profile. Each rule can have one of three behaviors:
 
-<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th></th></tr></thead><tbody><tr><td align="center"><h2><i class="fa-check">:check:</i></h2></td><td align="center"><h3>Force Include</h3><p></p></td><td>Forces the profile selected by this rule to follow the preceding profile.</td></tr><tr><td align="center"><h2><i class="fa-x">:x:</i></h2></td><td align="center"><h3>Force Exclude</h3><p></p></td><td>Prevents the profiles selected by this rule from following the preceding profile.</td></tr><tr><td align="center"><h2><i class="fa-wrench">:wrench:</i></h2></td><td align="center"><h3>Modified Chance</h3><p></p></td><td>Allows the profiles selected by this rule to follow the preceding profile, but modify the chance so they are less likely (variable)</td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th></th></tr></thead><tbody><tr><td align="center"><h2><i class="fa-check">:check:</i></h2></td><td align="center"><h3>Force Include</h3></td><td>Forces the profile selected by this rule to follow the preceding profile.</td></tr><tr><td align="center"><h2><i class="fa-x">:x:</i></h2></td><td align="center"><h3>Force Exclude</h3></td><td>Prevents the profiles selected by this rule from following the preceding profile.</td></tr><tr><td align="center"><h2><i class="fa-wrench">:wrench:</i></h2></td><td align="center"><h3>Modified Chance</h3></td><td>Allows the profiles selected by this rule to follow the preceding profile, but modify the chance so they are less likely (variable)</td></tr></tbody></table>
 
 {% hint style="danger" %}
 The default behavior for a weather profile when it is first added to the forecast is **force exclude all.** You will need to manually include profiles in order to prevent [#dead-ends](forecasting.md#dead-ends "mention"). Dead ends are automatically resolved by selecting any profile after which likely is not the desired behavior!
@@ -50,11 +50,11 @@ Lets you select specific profiles that this rule will apply to.
 
 ### By Tag
 
-Automatically selects profiles that overlap with the tag selection.&#x20;
+Automatically selects profiles that overlap with the tag selection.
 
 ## Lateral Shifts
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Sometimes, a weather will play so long that the initial conditions that it was forecast for have changed so drastically that it doesn't make sense to continue playing. For example, a snow profile may play during a warming period during which the temperature rises from 30° F to 40° F over a few hours. When this occurs, we need to do a **lateral shift** to a related profile that doesn't break the rules.
 
@@ -108,4 +108,4 @@ These errors will often be **silent** and require planning to ensure that all of
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-Self referencing is when a profile is able to forecast itself (denoted in green) leading to a cycle of the same weather pattern over and over again. This can be normal, but may also seem boring or unintentional in a game context. To change this, add a new rule that **Force Excludes** by **Profile** and set the profile to the initial profile.&#x20;
+Self referencing is when a profile is able to forecast itself (denoted in green) leading to a cycle of the same weather pattern over and over again. This can be normal, but may also seem boring or unintentional in a game context. To change this, add a new rule that **Force Excludes** by **Profile** and set the profile to the initial profile.

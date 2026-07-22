@@ -47,7 +47,7 @@ timeModule.AddEvent(myEvent);
 
 #### Listen for an event
 
-You can use the [meridiem event listener](https://app.gitbook.com/o/8BSPwfZaF6QMPy2VJpaj/s/Ob7r9cp7YUzVvftisWP3/~/edit/~/changes/1/under-the-hood/events#meridiem-event-listener) to listen for events without any extra code. If you **do** want to listen for events in C#, you can use this pattern
+You can use the [meridiem event listener](../../../under-the-hood/events.md#meridiem-event-listener) to listen for events without any extra code. If you **do** want to listen for events in C#, you can use this pattern
 
 ```csharp
 // Refer to the event you are listening for. This can be a runtime event as well!

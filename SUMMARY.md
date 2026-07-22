@@ -38,6 +38,7 @@
 * [Profiles](using-cozy/profiles/README.md)
   * [FX Profiles](using-cozy/profiles/fx-profiles/README.md)
     * [Thunder FX](using-cozy/profiles/fx-profiles/thunder-fx.md)
+  * [Atmosphere Profile](using-cozy/profiles/atmosphere-profile.md)
   * [Forecast Profile](using-cozy/profiles/forecast-profile.md)
   * [Weather Profile](using-cozy/profiles/weather-profile.md)
 * [Data Structures](using-cozy/data-structures/README.md)

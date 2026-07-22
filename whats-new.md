@@ -38,7 +38,7 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
   * Integrations are no longer modules but located in a separate tab
   * Integrations can now automatically update ShaderGraph files when needed
   * New integrations for the following assets
-    * &#x20;
+    *
 * New Climate data
   * Rather than using animation curves, COZY 4 defines four seasons that interpolate all properties based on the time of year.
   * Seasons are defined by 5 changing properties: temperature, humidity, air pressure, UV index, and air quality.
@@ -82,6 +82,4 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
     * Organize each feature individually
     * Only control what you need
     * Automatically warns you when you are wasting computation on a feature that is unused
-  * Time Module UI
-    *
-
+  * Time Module UI \*
