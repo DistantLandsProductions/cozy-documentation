@@ -4,7 +4,7 @@ icon: gear
 
 # Preferences
 
-<figure><img src="../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
 COZY Preferences store global settings for COZY that are applied in every scene. These are static and not meant to be changed at runtime.
 

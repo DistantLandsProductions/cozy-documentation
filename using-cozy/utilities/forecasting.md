@@ -22,7 +22,7 @@ The forecast window is your best friend when it comes to creating forecasts. It 
 
 The window lets you add weather profiles to the forecast. Once profiles are added, you can select them on the left panel to see what weather profiles may precede and follow it as well as the rules.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 On the right, you can adjust the weather profile's description, icon, and tag as well as their [chance.md](chance.md "mention").
 
@@ -54,7 +54,7 @@ Automatically selects profiles that overlap with the tag selection.
 
 ## Lateral Shifts
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Sometimes, a weather will play so long that the initial conditions that it was forecast for have changed so drastically that it doesn't make sense to continue playing. For example, a snow profile may play during a warming period during which the temperature rises from 30° F to 40° F over a few hours. When this occurs, we need to do a **lateral shift** to a related profile that doesn't break the rules.
 
@@ -70,13 +70,13 @@ Add a new entry under the lateral shifts list. This will let you define a condit
 
 ### Dead Ends
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 A dead end occurs when a profile is not connected to any other profiles after itself and cannot correctly determine what behavior makes sense following this. Dead ends are automatically resolved by defaulting to allow any profile after the preceding profile which may not be the ideal behavior. You can resolve a dead end manually by adding a rule that allows at least one weather profile to follow the preceding profile.
 
 ### Headless
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 A headless weather profile does not have any profiles that can forecast it. Because it is missing this top connection, it can never be scheduled and is dead weight for your system. To resolve, either remove the profile or add a rule to another profile that allows this to be scheduled.
 
@@ -106,6 +106,6 @@ These errors will often be **silent** and require planning to ensure that all of
 
 ### Self Reference
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Self referencing is when a profile is able to forecast itself (denoted in green) leading to a cycle of the same weather pattern over and over again. This can be normal, but may also seem boring or unintentional in a game context. To change this, add a new rule that **Force Excludes** by **Profile** and set the profile to the initial profile.

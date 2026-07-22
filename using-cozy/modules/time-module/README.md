@@ -11,7 +11,7 @@ tags:
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Modules/CozyTimeModule.cs" class="button secondary" data-icon="code">View on GitHub</a>
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt="" width="563"><figcaption></figcaption></figure>
 
 The Time Module is the core time and calendar system used by COZY. Use this system to control the time of day (in conjunction with the [atmosphere-module](../atmosphere-module/ "mention")), call events based on the time and day and set the date for seasonal effects (such as the [climate-module](../climate-module/ "mention"))
 
@@ -73,7 +73,7 @@ timeModule.OnChangeDay += () =>
 
 There are two types of [Broken link](/broken/pages/wwztKCxbPR6cJVyITtsE "mention") in COZY 4: static events and runtime events. Static events can only be added using the module UI. Simply drag and drop your event into the static events array
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 For runtime events, you will need to add them using C#.
 
@@ -99,7 +99,7 @@ timeModule.RefreshTodaysEvents();
 
 ## Widgets
 
-<table data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Current Date </h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the current date. Drag to change.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/20260722-1549-04.1366470.gif">20260722-1549-04.1366470.gif</a></td></tr><tr><td><h3>Current Time</h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the current time and time block. Drag to change.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/Recording 2026-07-22 105134.gif">Recording 2026-07-22 105134.gif</a></td></tr><tr><td><h3>Today's Events</h3></td><td><span data-option="FZGc4BhztoCa">Medium</span></td><td>Displays a list of events that occur on today's date</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/image (6).png">image (6).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Current Date</h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the current date. Drag to change.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/20260722-1549-04.1366470.gif">20260722-1549-04.1366470.gif</a></td></tr><tr><td><h3>Current Time</h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the current time and time block. Drag to change.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/Recording 2026-07-22 105134.gif">Recording 2026-07-22 105134.gif</a></td></tr><tr><td><h3>Today's Events</h3></td><td><span data-option="FZGc4BhztoCa">Medium</span></td><td>Displays a list of events that occur on today's date</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/image (5).png">image (5).png</a></td></tr></tbody></table>
 
 ## API
 

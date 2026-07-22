@@ -14,7 +14,7 @@ Use the paintbrush icon <i class="fa-paintbrush" style="color:blue;">:paintbrush
 
 Each feature can be independently toggled. When the feature is off, it will be automatically skipped during rendering.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Styles
 

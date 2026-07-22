@@ -27,8 +27,6 @@ COZY can be installed in two ways. For more frequent updates and access to beta 
 
 {% tabs %}
 {% tab title="Unity Package Manager" %}
-
-
 Navigate to your Unity project and open the Package Manager (Window/Package Manager). Now navigate to `My Assets` and search for COZY 3
 
 ![](https://distant-lands.gitbook.io/cozy-stylized-weather-documentation/~gitbook/image?url=https%3A%2F%2F2041269432-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FrqKsGNTyQFMrNJSWMHS0%252Fuploads%252FlIu3vVYlzg2X2baXlOU4%252Fimage.png%3Falt%3Dmedia%26token%3D46616060-008c-4380-a003-82a7d31293ff\&width=768\&dpr=3\&quality=100\&sign=29121704\&sv=2)
@@ -55,7 +53,7 @@ Using the green **`<> Code`** button, copy the clone URL using HTTPS
 
 **Install the Package**
 
-Now, navigate to your Unity project and open the Package Manager (Window/Package Manager). Click the  button and then select `Install package from git URL...`
+Now, navigate to your Unity project and open the Package Manager (Window/Package Manager). Click the button and then select `Install package from git URL...`
 
 <img src="https://distant-lands.gitbook.io/cozy-stylized-weather-documentation/~gitbook/image?url=https%3A%2F%2F2041269432-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FrqKsGNTyQFMrNJSWMHS0%252Fuploads%252FJwzwsz1H2g3sbjIWA3VV%252Fimage.png%3Falt%3Dmedia%26token%3Dc3930421-0431-4bd6-9cbb-a11c07759eb8&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=97e4175c&#x26;sv=2" alt="" width="563">
 
@@ -75,10 +73,10 @@ COZY 4 has a one click setup helper to make starting a new project as simple as 
 
 Navigate to Tools/COZY: Weather 4/Setup Scene to open the window
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 This window contains various tests and fixes for common setup issues
 
-<figure><img src="../.gitbook/assets/image (15).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Once all warnings are errors have been resolved, your project is ready to work with COZY 4!

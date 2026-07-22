@@ -28,7 +28,7 @@ This makes the two types complementary: author content can be stored as reusable
 
 Create a new static event using the Create Asset Menu in Unity (Assets/Create/Distant Lands/Cozy/Meridiem Event). You can then edit the properties for the event in the inspector
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
 To see this added to your calendar, be sure to [add this as a static event](../../modules/time-module/#add-events) in the [time-module](../../modules/time-module/ "mention")
 

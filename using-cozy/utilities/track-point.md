@@ -20,7 +20,7 @@ When a track point is not in use, the [Main Camera](https://docs.unity3d.com/600
 
 To set a track point, simply add the Track Point component to any game object. This will automatically be assigned as the track point in your scene!
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You can have **only** **one** track point in your scene at a time. Any others will be destroyed.

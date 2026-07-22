@@ -9,14 +9,12 @@ Be sure to [setup your project](https://distant-lands.gitbook.io/cozy-stylized-w
 {% stepper %}
 {% step %}
 ### Open your Scene
-
-
 {% endstep %}
 
 {% step %}
 ### Run the Setup Command
 
-<figure><img src="../.gitbook/assets/image (16).png" alt="" width="548"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt="" width="548"><figcaption></figcaption></figure>
 
 Navigate to Tools/COZY: Weather 4/Setup Scene
 
