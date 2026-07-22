@@ -1,0 +1,6 @@
+---
+icon: sun-bright
+---
+
+# Lighting
+
