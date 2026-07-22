@@ -10,7 +10,7 @@ tags:
 
 Modules are systems that take static data from [profiles](../profiles/ "mention") and use that data to change the final effect of COZY as a system. They serve as the fundamental building blocks of logic for COZY and work as independent systems.
 
-> A module is made up of one or more interfaces that define a feature set within COZY. For example, the [time-module](time-module/ "mention") implements ITimeModule (which controls the time of day), ICalendarModule (which controls the date), and ICalendarEventsModule (which stores and manages [Broken link](/broken/pages/wwztKCxbPR6cJVyITtsE "mention")). The purpose of this is so that you can combine, overload, or separate any feature set that you need to for your project.
+> A module is made up of one or more interfaces that define a feature set within COZY. For example, the [time-module](time-module/ "mention") implements ITimeModule (which controls the time of day), ICalendarModule (which controls the date), and ICalendarEventsModule (which stores and manages [meridiemevent.md](../data-structures/meridiem-architecture/meridiemevent.md "mention")). The purpose of this is so that you can combine, overload, or separate any feature set that you need to for your project.
 
 ## Managing Mod&#x75;_&#x6C;_&#x65;s
 
