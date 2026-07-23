@@ -2,7 +2,7 @@
 icon: fan
 ---
 
-# AirQuality
+# Air Quality
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Data/Climate/AirQuality.cs" class="button secondary" data-icon="code">View on GitHub</a>
 
@@ -12,7 +12,7 @@ The `AirQuality` struct represents the Air Quality Index (AQI) within COZY. Its 
 
 <details>
 
-<summary>Initialization & Implicit Conversions</summary>
+<summary>Initialization &#x26; Implicit Conversions</summary>
 
 ```csharp
 using DistantLands.Cozy;
@@ -54,7 +54,7 @@ AirQuality aq2 = AirQuality.Parse("300 AQI"); // Extracts numeric value
 
 <details>
 
-<summary>Interpolation & Arithmetic Operations</summary>
+<summary>Interpolation &#x26; Arithmetic Operations</summary>
 
 ```csharp
 AirQuality start = 20f;
@@ -79,7 +79,7 @@ start.Add(smog);
 
 ### Methods
 
-<table><thead><tr><th width="209.66668701171875">Method</th><th width="120.3333740234375">Return Type<select><option value="id_ctor" label="Constructor" color="blue"></option><option value="id_float" label="float" color="blue"></option><option value="id_str" label="string" color="blue"></option><option value="id_self" label="AirQuality" color="blue"></option><option value="id_void" label="void" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>AirQuality(float)</code></td><td><span data-option="id_ctor">Constructor</span></td><td>Constructs a new <code>AirQuality</code> instance clamped between 0 and 500.</td></tr><tr><td><code>GetAirQuality()</code></td><td><span data-option="id_float">float</span></td><td>Gets the Air Quality index value as a float.</td></tr><tr><td><code>ToString()</code></td><td><span data-option="id_str">string</span></td><td>Formats the Air Quality value with the AQI suffix (e.g., <code>"45 AQI"</code>).</td></tr><tr><td><code>Parse(string)</code></td><td><span data-option="id_self">AirQuality</span></td><td>Parses numeric strings into an <code>AirQuality</code> struct.</td></tr><tr><td><code>Lerp(AirQuality, float)</code></td><td><span data-option="id_self">AirQuality</span></td><td>Linearly interpolates this instance toward another target <code>AirQuality</code>.</td></tr><tr><td><code>Add(AirQualityDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by adding an <code>AirQualityDelta</code>.</td></tr><tr><td><code>Subtract(AirQualityDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by subtracting an <code>AirQualityDelta</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="241.66668701171875">Method</th><th width="120.3333740234375">Return Type<select><option value="id_ctor" label="Constructor" color="blue"></option><option value="id_float" label="float" color="blue"></option><option value="id_str" label="string" color="blue"></option><option value="id_self" label="AirQuality" color="blue"></option><option value="id_void" label="void" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>AirQuality(float)</code></td><td><span data-option="id_ctor">Constructor</span></td><td>Constructs a new <code>AirQuality</code> instance clamped between 0 and 500.</td></tr><tr><td><code>GetAirQuality()</code></td><td><span data-option="id_float">float</span></td><td>Gets the Air Quality index value as a float.</td></tr><tr><td><code>ToString()</code></td><td><span data-option="id_str">string</span></td><td>Formats the Air Quality value with the AQI suffix (e.g., <code>"45 AQI"</code>).</td></tr><tr><td><code>Parse(string)</code></td><td><span data-option="id_self">AirQuality</span></td><td>Parses numeric strings into an <code>AirQuality</code> struct.</td></tr><tr><td><code>Lerp(AirQuality, float)</code></td><td><span data-option="id_self">AirQuality</span></td><td>Linearly interpolates this instance toward another target <code>AirQuality</code>.</td></tr><tr><td><code>Add(AirQualityDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by adding an <code>AirQualityDelta</code>.</td></tr><tr><td><code>Subtract(AirQualityDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by subtracting an <code>AirQualityDelta</code>.</td></tr></tbody></table>
 
 ### Static Methods
 

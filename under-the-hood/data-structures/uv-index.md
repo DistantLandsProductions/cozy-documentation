@@ -2,7 +2,7 @@
 icon: sun
 ---
 
-# UVIndex
+# UV Index
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Data/Climate/UVIndex.cs" class="button secondary" data-icon="code">View on GitHub</a>
 
@@ -12,7 +12,7 @@ The `UVIndex` struct represents solar ultraviolet (UV) radiation levels within C
 
 <details>
 
-<summary>Initialization & Implicit Conversions</summary>
+<summary>Initialization &#x26; Implicit Conversions</summary>
 
 ```csharp
 using DistantLands.Cozy;
@@ -54,7 +54,7 @@ UVIndex uv2 = UVIndex.Parse("12.5");
 
 <details>
 
-<summary>Interpolation & Arithmetic Operations</summary>
+<summary>Interpolation &#x26; Arithmetic Operations</summary>
 
 ```csharp
 UVIndex start = 0f;
@@ -79,7 +79,7 @@ start.Add(spike);
 
 ### Methods
 
-<table><thead><tr><th width="209.66668701171875">Method</th><th width="120.3333740234375">Return Type<select><option value="id_ctor" label="Constructor" color="blue"></option><option value="id_float" label="float" color="blue"></option><option value="id_str" label="string" color="blue"></option><option value="id_self" label="UVIndex" color="blue"></option><option value="id_void" label="void" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>UVIndex(float)</code></td><td><span data-option="id_ctor">Constructor</span></td><td>Constructs a new <code>UVIndex</code> instance clamped between 0 and 15.</td></tr><tr><td><code>GetUVIndex()</code></td><td><span data-option="id_float">float</span></td><td>Gets the UV index value as a float.</td></tr><tr><td><code>ToString()</code></td><td><span data-option="id_str">string</span></td><td>Formats the UV Index as a rounded string value.</td></tr><tr><td><code>Parse(string)</code></td><td><span data-option="id_self">UVIndex</span></td><td>Parses numeric strings into a <code>UVIndex</code> struct.</td></tr><tr><td><code>Lerp(UVIndex, float)</code></td><td><span data-option="id_self">UVIndex</span></td><td>Linearly interpolates this instance toward another target <code>UVIndex</code>.</td></tr><tr><td><code>Add(UVIndexDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by adding a <code>UVIndexDelta</code>.</td></tr><tr><td><code>Subtract(UVIndexDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by subtracting a <code>UVIndexDelta</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="215.66668701171875">Method</th><th width="120.3333740234375">Return Type<select><option value="id_ctor" label="Constructor" color="blue"></option><option value="id_float" label="float" color="blue"></option><option value="id_str" label="string" color="blue"></option><option value="id_self" label="UVIndex" color="blue"></option><option value="id_void" label="void" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>UVIndex(float)</code></td><td><span data-option="id_ctor">Constructor</span></td><td>Constructs a new <code>UVIndex</code> instance clamped between 0 and 15.</td></tr><tr><td><code>GetUVIndex()</code></td><td><span data-option="id_float">float</span></td><td>Gets the UV index value as a float.</td></tr><tr><td><code>ToString()</code></td><td><span data-option="id_str">string</span></td><td>Formats the UV Index as a rounded string value.</td></tr><tr><td><code>Parse(string)</code></td><td><span data-option="id_self">UVIndex</span></td><td>Parses numeric strings into a <code>UVIndex</code> struct.</td></tr><tr><td><code>Lerp(UVIndex, float)</code></td><td><span data-option="id_self">UVIndex</span></td><td>Linearly interpolates this instance toward another target <code>UVIndex</code>.</td></tr><tr><td><code>Add(UVIndexDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by adding a <code>UVIndexDelta</code>.</td></tr><tr><td><code>Subtract(UVIndexDelta)</code></td><td><span data-option="id_void">void</span></td><td>Mutates this instance by subtracting a <code>UVIndexDelta</code>.</td></tr></tbody></table>
 
 ### Static Methods
 
