@@ -60,6 +60,8 @@
 * [Events](under-the-hood/events.md)
 * [Orientation](under-the-hood/orientation.md)
 * [Data Structures](under-the-hood/data-structures/README.md)
+  * [Air Quality](under-the-hood/data-structures/air-quality.md)
+  * [UV Index](under-the-hood/data-structures/uv-index.md)
   * [Temperature](under-the-hood/data-structures/temperature.md)
   * [Humidity](under-the-hood/data-structures/humidity.md)
   * [Pressure](under-the-hood/data-structures/pressure.md)
