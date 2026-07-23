@@ -24,7 +24,7 @@ This type is especially useful for:
 * driving day-based calendars and event scheduling
 
 {% hint style="info" %}
-You can configure your year settings in the [preferences.md](../../preferences.md "mention") window. Year settings are global and shared across your entire project.
+You can configure your year settings in the [preferences.md](../../../using-cozy/preferences.md "mention") window. Year settings are global and shared across your entire project.
 {% endhint %}
 
 ### Common Usage Examples
@@ -110,4 +110,4 @@ This type does not expose any public static properties.
 ## Notes
 
 * The date system is built to support structured calendar behavior across month/year boundaries and based on the configured COZY preferences.
-* Configure your year settings in the [preferences.md](../../preferences.md "mention") window
+* Configure your year settings in the [preferences.md](../../../using-cozy/preferences.md "mention") window

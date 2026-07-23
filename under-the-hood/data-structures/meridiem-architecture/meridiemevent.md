@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-Both event types describe a time window or all-day occurrence that may occur on a specific date, across a range of dates, or in a repeating pattern. They are designed to work with the [time-module](../../modules/time-module/ "mention") so that gameplay logic, ambience state, and world progression can respond to scheduled moments in the day.
+Both event types describe a time window or all-day occurrence that may occur on a specific date, across a range of dates, or in a repeating pattern. They are designed to work with the [time-module](../../../using-cozy/modules/time-module/ "mention") so that gameplay logic, ambience state, and world progression can respond to scheduled moments in the day.
 
 The main distinction is:
 
@@ -30,7 +30,7 @@ Create a new static event using the Create Asset Menu in Unity (Assets/Create/Di
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
 
-To see this added to your calendar, be sure to [add this as a static event](../../modules/time-module/#add-events) in the [time-module](../../modules/time-module/ "mention")
+To see this added to your calendar, be sure to [add this as a static event](../../../using-cozy/modules/time-module/#add-events) in the [time-module](../../../using-cozy/modules/time-module/ "mention")
 
 #### Create a runtime event in code
 
@@ -47,7 +47,7 @@ timeModule.AddEvent(myEvent);
 
 #### Listen for an event
 
-You can use the [meridiem event listener](../../../under-the-hood/events.md#meridiem-event-listener) to listen for events without any extra code. If you **do** want to listen for events in C#, you can use this pattern
+You can use the [meridiem event listener](../../events.md#meridiem-event-listener) to listen for events without any extra code. If you **do** want to listen for events in C#, you can use this pattern
 
 ```csharp
 // Refer to the event you are listening for. This can be a runtime event as well!

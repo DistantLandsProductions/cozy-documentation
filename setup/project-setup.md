@@ -21,7 +21,11 @@ layout:
 
 # Project Setup
 
-## Installation
+{% stepper %}
+{% step %}
+## Install the Package
+
+
 
 COZY can be installed in two ways. For more frequent updates and access to beta builds, use the GitHub installation. For more stable builds, use the Unity Asset Store installation.
 
@@ -62,12 +66,12 @@ In the dialog box, paste the git clone URL and click install
 <img src="https://distant-lands.gitbook.io/cozy-stylized-weather-documentation/~gitbook/image?url=https%3A%2F%2F2041269432-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FrqKsGNTyQFMrNJSWMHS0%252Fuploads%252FiK3DpGLOmjlF3nMeOjLv%252Fimage.png%3Falt%3Dmedia%26token%3De8177cdb-f655-4dd5-98f5-236bf45c76f8&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=16fb9f03&#x26;sv=2" alt="" width="563">
 
 Unity will now install the package from GitHub! Be sure to check the GitHub page often for updates.
-
-<br>
 {% endtab %}
 {% endtabs %}
+{% endstep %}
 
-## Settings
+{% step %}
+## Update Project Settings
 
 COZY 4 has a one click setup helper to make starting a new project as simple as possible.
 
@@ -80,3 +84,15 @@ This window contains various tests and fixes for common setup issues
 <figure><img src="../.gitbook/assets/image (13).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Once all warnings are errors have been resolved, your project is ready to work with COZY 4!
+{% endstep %}
+
+{% step %}
+## Configure Preferences (Optional)
+
+COZY comes with lots of available options for localization and toggleable features that allow you to get the most out of your installation. For the best results, take a look over the [preferences.md](../using-cozy/preferences.md "mention") window.
+
+COZY is pre-configured for a U.S. based project making use of Imperial units for temperature, pressure, time format, and date format.
+
+
+{% endstep %}
+{% endstepper %}

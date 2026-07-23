@@ -82,4 +82,4 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
     * Organize each feature individually
     * Only control what you need
     * Automatically warns you when you are wasting computation on a feature that is unused
-  * Time Module UI \*
+  * Time Module UI

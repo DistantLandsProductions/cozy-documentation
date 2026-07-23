@@ -41,26 +41,34 @@
   * [Atmosphere Profile](using-cozy/profiles/atmosphere-profile.md)
   * [Forecast Profile](using-cozy/profiles/forecast-profile.md)
   * [Weather Profile](using-cozy/profiles/weather-profile.md)
-* [Data Structures](using-cozy/data-structures/README.md)
-  * [Meridiem Architecture](using-cozy/data-structures/meridiem-architecture/README.md)
-    * [MeridiemTime](using-cozy/data-structures/meridiem-architecture/meridiemtime.md)
-    * [MeridiemTimeDelta](using-cozy/data-structures/meridiem-architecture/meridiemtimedelta.md)
-    * [MeridiemDate](using-cozy/data-structures/meridiem-architecture/meridiemdate.md)
-    * [MeridiemBlock](using-cozy/data-structures/meridiem-architecture/meridiemblock.md)
-    * [MeridiemEvent](using-cozy/data-structures/meridiem-architecture/meridiemevent.md)
 * [Utilities](using-cozy/utilities/README.md)
   * [Chance](using-cozy/utilities/chance.md)
+  * [Precipitation Chance](using-cozy/utilities/precipitation-chance.md)
   * [Forecasting](using-cozy/utilities/forecasting.md)
   * [Track Point](using-cozy/utilities/track-point.md)
   * [Lightning & Thunder](using-cozy/utilities/lightning-and-thunder.md)
 * [Biomes](using-cozy/biomes.md)
 * [Preferences](using-cozy/preferences.md)
 
+## Extensions
+
+* [Blocks](extensions/blocks.md)
+
 ## Under The Hood
 
 * [Render Feature](under-the-hood/render-feature.md)
 * [Events](under-the-hood/events.md)
 * [Orientation](under-the-hood/orientation.md)
+* [Data Structures](under-the-hood/data-structures/README.md)
+  * [Temperature](under-the-hood/data-structures/temperature.md)
+  * [Humidity](under-the-hood/data-structures/humidity.md)
+  * [Pressure](under-the-hood/data-structures/pressure.md)
+  * [Meridiem Architecture](under-the-hood/data-structures/meridiem-architecture/README.md)
+    * [MeridiemTime](under-the-hood/data-structures/meridiem-architecture/meridiemtime.md)
+    * [MeridiemTimeDelta](under-the-hood/data-structures/meridiem-architecture/meridiemtimedelta.md)
+    * [MeridiemDate](under-the-hood/data-structures/meridiem-architecture/meridiemdate.md)
+    * [MeridiemBlock](under-the-hood/data-structures/meridiem-architecture/meridiemblock.md)
+    * [MeridiemEvent](under-the-hood/data-structures/meridiem-architecture/meridiemevent.md)
 * [Integrations](under-the-hood/integrations/README.md)
   * [The Visual Engine](under-the-hood/integrations/the-visual-engine.md)
 

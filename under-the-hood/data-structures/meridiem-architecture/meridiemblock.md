@@ -13,7 +13,7 @@ tags:
 
 ## Overview
 
-A [meridiemblock.md](meridiemblock.md "mention") represents a range or phase of the day defined by a start time and an end time. This makes it useful for systems that need to react to time-of-day categories rather than exact timestamps. Block times are determined in the [preferences.md](../../preferences.md "mention") window.
+A [meridiemblock.md](meridiemblock.md "mention") represents a range or phase of the day defined by a start time and an end time. This makes it useful for systems that need to react to time-of-day categories rather than exact timestamps. Block times are determined in the [preferences.md](../../../using-cozy/preferences.md "mention") window.
 
 COZY uses this model to map the current time to a simpler semantic block, which is then used by systems such as weather, lighting, ambience, and gameplay state transitions.
 

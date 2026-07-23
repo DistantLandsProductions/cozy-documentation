@@ -4,7 +4,7 @@ icon: globe
 
 # COZY Instance
 
-When you first start with COZY, it may seem overwhelming at first. It can be difficult to know where to even start to make adjustments! This page is designed to help you get a better understanding of how COZY works as a system combining all of the parts needed to make a weather system function in Unity.
+The COZY instance is the first thing created in any scene that uses COZY (learn more in [scene-setup.md](../setup/scene-setup.md "mention")). It is the core for the system and handles communication between the [modules](modules/ "mention") and the [features](features/ "mention").
 
 ## What is it?
 

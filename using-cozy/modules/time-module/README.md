@@ -15,7 +15,7 @@ tags:
 
 The Time Module is the core time and calendar system used by COZY. Use this system to control the time of day (in conjunction with the [atmosphere-module](../atmosphere-module/ "mention")), call events based on the time and day and set the date for seasonal effects (such as the [climate-module](../climate-module/ "mention"))
 
-This module makes use of the [meridiem-architecture](../../data-structures/meridiem-architecture/ "mention") to set the time and date in an approachable format both on the front end and in code. These can be cast to the more common [DateTime struct](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) when needed.
+This module makes use of the [meridiem-architecture](../../../under-the-hood/data-structures/meridiem-architecture/ "mention") to set the time and date in an approachable format both on the front end and in code. These can be cast to the more common [DateTime struct](https://learn.microsoft.com/en-us/dotnet/api/system.datetime?view=net-10.0) when needed.
 
 ## Usage Examples
 

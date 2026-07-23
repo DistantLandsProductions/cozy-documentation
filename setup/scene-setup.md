@@ -18,7 +18,7 @@ Be sure to [setup your project](https://distant-lands.gitbook.io/cozy-stylized-w
 
 Navigate to Tools/COZY: Weather 4/Setup Scene
 
-If you want a basic setup ready to go out of the box, use the Basic Module option. For a clean setup that starts with no modules, use the No Modules option.
+If you want a basic setup ready to go out of the box, use the **Basic Modules** option. For a clean setup that starts with no modules, use the **No Modules** option.
 {% endstep %}
 
 {% step %}
@@ -26,6 +26,10 @@ If you want a basic setup ready to go out of the box, use the Basic Module optio
 
 Your scene is now setup for use with COZY 4!
 {% endstep %}
-{% endstepper %}
+
+{% step %}
+### Setup a Track Point (Optional)
 
 For the best results, setup a [track-point.md](../using-cozy/utilities/track-point.md "mention") if you do not want COZY to follow your main camera.
+{% endstep %}
+{% endstepper %}

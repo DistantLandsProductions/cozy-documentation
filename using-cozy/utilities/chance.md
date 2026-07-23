@@ -28,39 +28,19 @@ Anywhere that a pseudo-random value is used, there are a few variables that you 
 
 This is the base chance of this outcome. In a standard random function each outcome has a chance of 1 meaning that each outcome is equally likely. A chart of the ratio of outcomes will look approximately like this:
 
-```mermaid
-block-beta
-  columns 3
-  R["Rainy: 33%"]:1
-  C["Cloudy: 33%"]:1
-  S["Sunny: 33%"]:1
-
-  style R fill:#158,color:#fff,stroke:#333,stroke-width:2px
-  style C fill:#333,color:#fff,stroke:#333,stroke-width:2px
-  style S fill:#a71,color:#333,stroke:#333,stroke-width:2px
-```
+<img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
 
 While the next number is always random, by the end of the rolls there will be about the same number of each possible outcome.
 
 If you were to set an outcome (such as sunny) to have a chance of 2, this drastically changes the outcome set. Now that outcome has a higher chance of occurring and will be twice as likely as the other outcomes. Now our chart looks like this:
 
-```mermaid
-block-beta
-  columns 4
-  R["Rainy: 25%"]:1
-  C["Cloudy: 25%"]:1
-  S["Sunny: 50%"]:2
-
-  style R fill:#158,color:#fff,stroke:#333,stroke-width:2px
-  style C fill:#333,color:#fff,stroke:#333,stroke-width:2px
-  style S fill:#a71,color:#333,stroke:#333,stroke-width:2px
-```
+<img src="../../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
 
 ## Chance Effectors <a href="#chance-effectors" id="chance-effectors"></a>
 
 While that helps to make certain weather types more rare than others, it does not necessarily reflect the real world. In the real world, the weather forecast has many factors that contribute to what happens outside our windows such as temperature, humidity, etc. This is reflected in COZY through the use of **chance effectors**. Chance effectors function as multipliers for our base chance by taking in a variable, charting it on a curve and outputting a multiplier
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In our simulation, there are several variables that we can choose from to change our base chance.
 

@@ -6,7 +6,7 @@ icon: bolt-lightning
 
 Lightning and thunder are managed by the [thunder-fx.md](../profiles/fx-profiles/thunder-fx.md "mention") profiles.
 
-COZY 4 uses a lightning attractor system that allows you to define areas that will be hit by lightning. When no attractors are present, lightning will strike a random spot within 500m of the player camera but will not call an event.
+COZY 4 uses a lightning attractor system that allows you to define areas that will be hit by lightning. When no attractors are present, lightning will strike a random spot within a 500m box around the player camera but will not call an event.
 
 ## Create an Attractor
 
