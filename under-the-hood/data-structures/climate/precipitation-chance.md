@@ -4,12 +4,12 @@ icon: cloud-drizzle
 
 # Precipitation Chance
 
-Precipitation chance drives the forecasting of rain and snow [weather-profile.md](../profiles/weather-profile.md "mention")s. Rather than have a single precipitation chance value, the chance is broken down into two values: stratiform and convective chance. These are two different rain chance types that break down rain chance into two more usable values. Light rain and heavy rain may _seem_ like the same type of thing, but the way that you get to either of these and what happens after each type of weather is very different.
+Precipitation chance drives the forecasting of rain and snow [weather-profile.md](../../../using-cozy/profiles/weather-profile.md "mention")s. Rather than have a single precipitation chance value, the chance is broken down into two values: stratiform and convective chance. These are two different rain chance types that break down rain chance into two more usable values. Light rain and heavy rain may _seem_ like the same type of thing, but the way that you get to either of these and what happens after each type of weather is very different.
 
 {% hint style="info" %}
-You can also set these values directly if you prefer to! Simply set the `Rain Chance Calculation Mode` in the [climate-module](../modules/climate-module/ "mention") to `manual`&#x20;
+You can also set these values directly if you prefer to! Simply set the `Rain Chance Calculation Mode` in the [climate-module](../../../using-cozy/modules/climate-module/ "mention") to `manual`&#x20;
 
-<p align="center"><img src="../../.gitbook/assets/image.png" alt="" data-size="original"></p>
+<p align="center"><img src="../../../.gitbook/assets/image.png" alt="" data-size="original"></p>
 {% endhint %}
 
 ## Convective Chance
@@ -26,7 +26,7 @@ $$
 Convective= \left(\left(t+3\right)\cdot0.375\cdot h\right)^{2}\cdot\left(1-p\right)^{2}
 $$
 
-Where t, h, and p represent the normalized version of [temperature.md](../../under-the-hood/data-structures/temperature.md "mention"), [humidity.md](../../under-the-hood/data-structures/humidity.md "mention"), and [pressure.md](../../under-the-hood/data-structures/pressure.md "mention") respectively.
+Where t, h, and p represent the normalized version of [temperature.md](temperature.md "mention"), [humidity.md](humidity.md "mention"), and [pressure.md](pressure.md "mention") respectively.
 
 ## Stratiform Chance
 
