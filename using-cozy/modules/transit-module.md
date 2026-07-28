@@ -64,9 +64,19 @@ In your sun transit settings, adjust your sunrise and sunset times so that they 
 
 <details>
 
-<summary></summary>
+<summary>Get Today's Sunrise or Sunset Time</summary>
 
+```csharp
+// To get the current sunrise and sunset time in C#, 
+// all you need to do is poll the active Transit module 
 
+// Get the Transit Module
+CozyWeather.Instance.GetModule(out CozyTransitModule transit);
+
+// Get the sunrise and set times
+MeridiemTime sunrise = transit.SunriseTime;
+MeridiemTime sunset = transit.SunsetTime;
+```
 
 </details>
 
@@ -79,6 +89,14 @@ In your sun transit settings, adjust your sunrise and sunset times so that they 
 ***
 
 ## API
+
+### Properties
+
+<table><thead><tr><th width="148.33331298828125">Name</th><th width="121.6666259765625">Type<select><option value="EKyPUQoLDXZT" label="bool" color="blue"></option><option value="FEKO6mTFyhqJ" label="Type[]" color="blue"></option><option value="ghDsMLeQx4f6" label="MeridiemTime" color="blue"></option><option value="E2MHJUww79F8" label="MeridiemDay" color="blue"></option><option value="hUvr0sjUuoir" label="MeridiemDate" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td>SunriseTime</td><td><span data-option="ghDsMLeQx4f6">MeridiemTime</span></td><td>Get the sunrise time today. Updates when day changes</td></tr><tr><td>SunsetTime</td><td><span data-option="ghDsMLeQx4f6">MeridiemTime</span></td><td>Get the sunset time today. Updates when day changes</td></tr><tr><td>SummerSolstice</td><td><span data-option="hUvr0sjUuoir">MeridiemDate</span></td><td>Gets the longest day of the year. Currently returns June 20</td></tr><tr><td>WinterSolstice</td><td><span data-option="hUvr0sjUuoir">MeridiemDate</span></td><td>Gets the shortest day of the year. Currently returns Dec 21</td></tr></tbody></table>
+
+### Methods
+
+<table><thead><tr><th width="198.33331298828125">Name</th><th width="83.6666259765625">Type<select><option value="EKyPUQoLDXZT" label="bool" color="blue"></option><option value="FEKO6mTFyhqJ" label="Type[]" color="blue"></option><option value="pHA54vS6gX5X" label="float" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td>ModifyDayPercentage</td><td><span data-option="pHA54vS6gX5X">float</span></td><td><p>Modifies an input based on the sun transit curve. </p><p></p><p>E.g., in a situation where the sun would be 25% of the way through it's path, what percentage would it actually be?</p></td></tr></tbody></table>
 
 ### Inherited
 
