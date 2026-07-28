@@ -17,49 +17,53 @@ The Atmosphere Module is the core system that manages all visual aspects of the 
 
 The Atmosphere Module works by collecting parameters from atmosphere profiles and biomes, then propagating these values to Unity's shader system. The module handles:
 
-- **Sky Rendering**: Gradient skies, two-tone skies, stars, constellations, galaxy, rainbows, light columns, and shooting stars
-- **Celestial Bodies**: Sun and moon disk rendering with configurable appearance and orbital mechanics
-- **Fog Systems**: Multiple fog types including gradient fog, volumetric fog, height-based fog, and two-tone fog
-- **Cloud Layers**: Volumetric clouds and procedural cloud layers (cumulus, altocumulus, cirrus, cirrostratus)
-- **Lighting**: Sun and moon light management, ambient lighting, lens flares, and shadow configuration
+* **Sky Rendering**: Gradient skies, two-tone skies, stars, constellations, galaxy, rainbows, light columns, and shooting stars
+* **Celestial Bodies**: Sun and moon disk rendering with configurable appearance and orbital mechanics
+* **Fog Systems**: Multiple fog types including gradient fog, volumetric fog, height-based fog, and two-tone fog
+* **Cloud Layers**: Volumetric clouds and procedural 2D cloud layers
+* **Lighting**: Sun and moon light management, ambient lighting, lens flares, and shadow configuration
 
-## Module Architecture
+### Static Data
 
-The Atmosphere Module operates in two main phases:
+The atmosphere module only applies data in the form of [atmosphere-profile.md](../../profiles/atmosphere-profile.md "mention")s. These are static collections of atmosphere data that _do not change at runtime_. Each instance of an atmosphere profile is directly tied to data saved in your project.
 
-### 1. Parameter Aggregation (`PropagateVariables`)
-The module collects atmosphere parameters from:
-- Active atmosphere profile overrides
-- Biome-specific atmosphere profiles (when applicable)
-- Sky pitch and rotation preferences
+{% hint style="warning" %}
+For ease of use, the overrides included in an atmosphere module are exposed in the inspector for the atmosphere module once it is assigned. This means that editing atmosphere overrides in the Atmosphere module do not only apply to that specific instance of COZY and will apply to any other system using that atmosphere profile!
+{% endhint %}
 
-### 2. Shader Variable Propagation (`PassShaderVariables`)
-All collected parameters are passed to the rendering system through global shader variables, ensuring visual consistency across all rendered surfaces.
+### Lifecycle
 
-## Public Properties
+Every frame, interpolated data from the dynamic fields in the atmosphere profile are bundled in an Atmosphere Parameters struct. This is then passed through the module throughout the duration of the frame and then passed to the shader. The parameters data is then recycled the following frame to prevent GC.
 
-| Name | Type | Description |
-|------|------|-------------|
-| `Parameters` | AtmosphereParameters | Read-only access to the current atmosphere parameters |
-| `SunDirection` | Vector3 | The current direction vector pointing toward the sun |
-| `MoonDirection` | Vector3 | The current direction vector pointing toward the moon |
-| `SunLight` | Light | Reference to the sun light component |
-| `MoonLight` | Light | Reference to the moon light component |
-| `StrongestLight` | Light | Returns whichever light (sun or moon) is currently brightest |
+```mermaid
+flowchart LR
 
-## Public Methods
+subgraph Apply["Apply Overrides"]
+direction TD
+  A --> B
+  B --> C
+end
+subgraph Biome["Apply Biome Overrides"]
+direction TD
+  D --> E
+  E --> F
+end
+subgraph BBSG["Inject Here"]
+direction TD
+  BB{"Before Biomes"}
+end
+subgraph ABSG["Or Here"]
+direction TD
+  AB{"After Biomes"}
+end
 
-| Name | Parameters | Return Type | Description |
-|------|------------|------------|-------------|
-| `InitializeModule` | - | void | Sets up module references and initializes parameters |
-| `PropagateVariables` | - | void | Collects and aggregates all atmosphere parameters |
-
-## Public Events
-
-| Name | Parameters | Description |
-|------|------------|-------------|
-| `RunBeforeBiomes` | CozyAtmosphereModule | Invoked before biome atmosphere profiles are applied |
-| `RunAfterBiomes` | CozyAtmosphereModule | Invoked after biome atmosphere profiles are applied |
+Start["Create Empty Parameters"] --> Apply
+Apply --> BBSG["Before Biomes"]
+BBSG-->Biome
+Biome --> ABSG["After Biomes"]
+ABSG --> Send["Send to Shader"]
+ABSG --> Reuse["Recycle Next Frame"]
+```
 
 ## Usage Examples
 
@@ -69,7 +73,7 @@ All collected parameters are passed to the rendering system through global shade
 
 ```csharp
 // Get the atmosphere module
-CozyAtmosphereModule atmosphereModule = GetComponent<CozyWeather>().GetModule<CozyAtmosphereModule>();
+CozyAtmosphereModule atmosphereModule = CozyWeather.Instance.Atmosphere;
 
 // Access current parameters
 AtmosphereParameters currentParams = atmosphereModule.Parameters;
@@ -87,7 +91,7 @@ float sunIntensity = currentParams.lightingSunLightIntensity;
 
 ```csharp
 // Get the atmosphere module
-CozyAtmosphereModule atmosphereModule = GetComponent<CozyWeather>().GetModule<CozyAtmosphereModule>();
+CozyAtmosphereModule atmosphereModule = CozyWeather.Instance.Atmosphere;
 
 // Get sun and moon positions
 Vector3 sunDir = atmosphereModule.SunDirection;
@@ -104,10 +108,12 @@ bool sunAboveHorizon = sunAngle < 90;
 
 <details>
 
-<summary>Respond to Atmosphere Changes</summary>
+<summary>Inject into Parameters Queue</summary>
+
+If you want to adjust atmosphere parameters at runtime without using a biome, you can also directly inject your own changes into the parameters struct before it is passed to the shader!
 
 ```csharp
-CozyAtmosphereModule atmosphereModule = GetComponent<CozyWeather>().GetModule<CozyAtmosphereModule>();
+CozyAtmosphereModule atmosphereModule = CozyWeather.Instance.Atmosphere;
 
 // Subscribe to atmosphere events
 atmosphereModule.RunBeforeBiomes += (module) =>
@@ -149,89 +155,38 @@ else
 
 </details>
 
-## Interfaces
+## API
 
-The Atmosphere Module implements the `IAtmosphereModule` interface, providing a standard contract for atmosphere management across the COZY ecosystem.
+### Public Properties
 
-## Sky Configuration
+| Name             | Type                 | Description                                                  |
+| ---------------- | -------------------- | ------------------------------------------------------------ |
+| `Parameters`     | AtmosphereParameters | Read-only access to the current atmosphere parameters        |
+| `SunDirection`   | Vector3              | The current direction vector pointing toward the sun         |
+| `MoonDirection`  | Vector3              | The current direction vector pointing toward the moon        |
+| `SunLight`       | Light                | Reference to the sun light component                         |
+| `MoonLight`      | Light                | Reference to the moon light component                        |
+| `StrongestLight` | Light                | Returns whichever light (sun or moon) is currently brightest |
 
-The module supports multiple sky rendering modes:
+### Public Methods
 
-### Gradient Sky
-A smooth gradient from zenith to horizon with optional ground color. Perfect for realistic atmospheric rendering.
+| Name                 | Parameters | Return Type | Description                                          |
+| -------------------- | ---------- | ----------- | ---------------------------------------------------- |
+| `InitializeModule`   | -          | void        | Sets up module references and initializes parameters |
+| `PropagateVariables` | -          | void        | Collects and aggregates all atmosphere parameters    |
 
-**Key Parameters:**
-- `skyGradientZenithColor` - Color at the top of the sky
-- `skyGradientHorizonColor` - Color at the horizon
-- `skyGradientGroundColor` - Color for the ground/below horizon
-- `skyGradientZenithExponent` - Controls gradient falloff from zenith
-- `skyGradientGroundExponent` - Controls gradient falloff to ground
+### Public Events
 
-### Two-Tone Sky
-A stylized two-color sky split around the sun direction. Great for cartoon or stylized weather.
-
-**Key Parameters:**
-- `skyTwoToneSunSideColor` - Color on the sun side
-- `skyTwoToneAntiSunSideColor` - Color opposite the sun
-- `skyTwoToneOffset` - Adjusts the split position
-- `skyTwoToneExponent` - Controls the transition smoothness
-
-### Celestial Features
-Stars, constellations, galaxy, rainbows, light columns, and shooting stars can all be independently configured and blended into your sky.
-
-## Cloud Systems
-
-### Volumetric Clouds
-High-performance volumetric cloud rendering with ray marching, supporting multiple height layers and wind effects.
-
-**Configuration:**
-- Height and thickness
-- Density and cohesion for shape control
-- Lighting colors for lit and shaded areas
-- Wind strength for animation
-- LOD support for performance scaling
-
-### Cloud Layers
-Four procedural cloud layer types with unique characteristics:
-
-1. **Cumulus** - Puffy fair-weather clouds
-2. **Altocumulus** - Mid-level textured clouds
-3. **Cirrus** - High, wispy clouds with wind effects
-4. **Cirrostratus** - Thin, sheet-like clouds
-
-Each layer supports independent configuration of height, density, lighting, wind, and erosion.
-
-## Fog Systems
-
-### Gradient Fog
-Multi-color gradient fog with distance-based density variation.
-
-### Volumetric Fog
-Lit fog with ray marching and multiple cascade levels for advanced atmospheric effects.
-
-### Height Fog
-Fog density based on world height for realistic ground-hugging effects.
-
-### Two-Tone Fog
-Stylized fog split between sun-lit and shadowed areas.
-
-## Lighting Management
-
-The module automatically manages:
-
-- **Sun Light**: Direction, intensity, color, and shadows based on time and atmosphere
-- **Moon Light**: Similar to sun with moon phase influence
-- **Ambient Lighting**: Sky, equator, and ground colors for global illumination
-- **Lens Flares**: Automatic lens flare positioning and intensity
-
-When `HandleSceneLighting` is enabled in preferences, the module updates Unity's global render settings automatically.
+| Name              | Parameters           | Description                                          |
+| ----------------- | -------------------- | ---------------------------------------------------- |
+| `RunBeforeBiomes` | CozyAtmosphereModule | Invoked before biome atmosphere profiles are applied |
+| `RunAfterBiomes`  | CozyAtmosphereModule | Invoked after biome atmosphere profiles are applied  |
 
 ## Performance Considerations
 
-- The Atmosphere Module uses shader global variables for efficiency
-- Only changed parameters are propagated to shaders (delta detection)
-- Cloud rendering supports LOD adjustments for performance scaling
-- Volumetric effects can be configured with step count for quality/performance tradeoffs
+* The Atmosphere Module uses shader global variables for efficiency
+* Only changed parameters are propagated to shaders (delta detection)
+* Volumetric effects can be configured with step count for quality/performance tradeoffs
 
 ## Biome Integration
 
@@ -239,4 +194,4 @@ The Atmosphere Module fully supports COZY's biome system. Each biome can define 
 
 ## Interfaces
 
-<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3><i class="icon icon-square"></i>IAtmosphereModule</h3></td><td align="center">The standard interface for atmosphere management</td><td><a href="iatmospheremodule.md">iatmospheremodule.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3>IAtmosphereModule</h3></td><td align="center">The standard interface for atmosphere management</td><td><a href="iatmospheremodule.md">iatmospheremodule.md</a></td></tr></tbody></table>

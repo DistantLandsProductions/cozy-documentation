@@ -1,7 +1,8 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Welcome!](README.md)
 * [What's New?](whats-new.md)
+* [Support](support.md)
 
 ## Setup
 
