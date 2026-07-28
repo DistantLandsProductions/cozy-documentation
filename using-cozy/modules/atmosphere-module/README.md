@@ -5,6 +5,7 @@ tags:
   - module
   - tutorial
   - api
+  - biome
 ---
 
 # Atmosphere Module
@@ -155,6 +156,14 @@ else
 
 </details>
 
+## Widgets
+
+<table data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Override Count </h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the number of overrides on the current atmosphere profile.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/image (21).png">image (21).png</a></td></tr></tbody></table>
+
+## Biome Integration
+
+The Atmosphere Module fully supports COZY's biome system. Each biome can define its own atmosphere profile with unique sky, fog, cloud, and lighting settings. The module smoothly blends between biome atmospheres based on active biome weights.
+
 ## API
 
 ### Public Properties
@@ -182,16 +191,6 @@ else
 | `RunBeforeBiomes` | CozyAtmosphereModule | Invoked before biome atmosphere profiles are applied |
 | `RunAfterBiomes`  | CozyAtmosphereModule | Invoked after biome atmosphere profiles are applied  |
 
-## Performance Considerations
-
-* The Atmosphere Module uses shader global variables for efficiency
-* Only changed parameters are propagated to shaders (delta detection)
-* Volumetric effects can be configured with step count for quality/performance tradeoffs
-
-## Biome Integration
-
-The Atmosphere Module fully supports COZY's biome system. Each biome can define its own atmosphere profile with unique sky, fog, cloud, and lighting settings. The module smoothly blends between biome atmospheres based on active biome weights.
-
-## Interfaces
+### Interfaces
 
 <table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3>IAtmosphereModule</h3></td><td align="center">The standard interface for atmosphere management</td><td><a href="iatmospheremodule.md">iatmospheremodule.md</a></td></tr></tbody></table>

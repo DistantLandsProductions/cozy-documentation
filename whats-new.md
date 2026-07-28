@@ -41,7 +41,7 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
     *
 * New Climate data
   * Rather than using animation curves, COZY 4 defines four seasons that interpolate all properties based on the time of year.
-  * Seasons are defined by 5 changing properties: temperature, humidity, air pressure, UV index, and air quality.
+  * Seasons define 5 changing properties: temperature, humidity, air pressure, UV index, and air quality.
   * Each property can have a min and max value as well as a modulated offset for more variation day to day. This can be controlled on a per season basis as well for more violent storms as weather changes quickly in spring and autumn.
   * Split rain chance into two values: stratiform rain chance and convective rain chance. These are used to control the chance for light rain and heavy rain separately to mirror real life
   * Seasons can also be used for meridiem events
@@ -52,7 +52,7 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
   * Removed events module in favor of individual module events.
   * Time Events
     * Events for new minute, hour, day, year
-    * New Merdiem Event system
+    * New [meridiemevent.md](under-the-hood/data-structures/meridiem-architecture/meridiemevent.md "mention") system
       * Create static events with custom repeating patterns
       * Create events based on world conditions rather than set dates (e.g. coldest day of the year, full moon, first day of a season, etc.)
       * Define a start and end date and time
@@ -66,7 +66,9 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
     * New thunder attractor script will attract lightning strikes and call an event when struck
     * New VFX graph based lightning effect
   * New VFX Graph integration
-  *
+* Track Point
+  * COZY no longer follows the main camera automatically
+  * New [track-point.md](using-cozy/utilities/track-point.md "mention") component lets you quickly specify a location for VFX and biome calculations.
 
 ### UI/UX
 

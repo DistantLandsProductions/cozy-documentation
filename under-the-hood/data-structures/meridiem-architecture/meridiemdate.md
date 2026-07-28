@@ -62,6 +62,12 @@ MeridiemDate nextWeek = date + 7;
 float yearPercent = timeModule.CurrentDate.YearPercentage;
 ```
 
+#### Get the number of days in the year
+
+```c#
+int daysPerYear = CozyPreferences.DaysPerYear;
+```
+
 ## API
 
 ### Properties

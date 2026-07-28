@@ -1,3 +1,7 @@
+- tag: biome
+  label: Biome
+  icon: cube
+  color: violet
 - tag: module
   label: Module
   icon: file-brackets-curly

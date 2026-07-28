@@ -4,6 +4,7 @@ tags:
   - module
   - tutorial
   - api
+  - biome
 ---
 
 # Ambience Module
