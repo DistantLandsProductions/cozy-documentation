@@ -31,6 +31,8 @@
     * [ISeasonModule](using-cozy/modules/climate-module/iseasonmodule.md)
   * [Weather Module](using-cozy/modules/weather-module/README.md)
     * [IWeatherModule](using-cozy/modules/weather-module/iweathermodule.md)
+  * [Wind Module](using-cozy/modules/atmosphere-module-1/README.md)
+    * [IWindModule](using-cozy/modules/atmosphere-module-1/iatmospheremodule.md)
   * [Ambience Module](using-cozy/modules/ambience-module/README.md)
     * [IAmbienceModule](using-cozy/modules/ambience-module/iambiencemodule.md)
   * [Extra Interfaces](using-cozy/modules/extra-interfaces/README.md)
@@ -41,6 +43,7 @@
     * [Thunder FX](using-cozy/profiles/fx-profiles/thunder-fx.md)
   * [Atmosphere Profile](using-cozy/profiles/atmosphere-profile.md)
   * [Forecast Profile](using-cozy/profiles/forecast-profile.md)
+  * [Ambience Profile](using-cozy/profiles/ambience-profile.md)
   * [Weather Profile](using-cozy/profiles/weather-profile.md)
 * [Utilities](using-cozy/utilities/README.md)
   * [Chance](using-cozy/utilities/chance.md)
@@ -82,6 +85,7 @@
 
 * [Build a Module](extending-cozy/build-a-module.md)
 * [Build an Integration](extending-cozy/build-an-integration.md)
+* [Build a Custom FX Profile](extending-cozy/build-a-custom-fx-profile.md)
 * [Inject a Shader](extending-cozy/inject-a-shader.md)
 
 ## Appendix

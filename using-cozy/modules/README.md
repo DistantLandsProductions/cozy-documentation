@@ -61,13 +61,13 @@ There are also several precached module interfaces on the instance that can be g
 ```csharp
 // Each of these are cached module interfaces
 CozyWeather.Instance.Atmosphere;
+CozyWeather.Instance.Ambience;
 CozyWeather.Instance.Climate;
 CozyWeather.Instance.Precipitation;
 CozyWeather.Instance.Weather;
 CozyWeather.Instance.Seasons;
 CozyWeather.Instance.Time;
 CozyWeather.Instance.Calendar;
-CozyWeather.Instance.Atmosphere;
 CozyWeather.Instance.Wind;
 ```
 
