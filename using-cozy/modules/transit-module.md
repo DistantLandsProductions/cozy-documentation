@@ -84,7 +84,7 @@ MeridiemTime sunset = transit.SunsetTime;
 
 ## Widgets
 
-<table data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Transit Graph </h3></td><td><span data-option="CC3yrvOgAGU1">Large</span></td><td>Shows the sun's position in the sky after applying the Transit modifier.</td><td data-object-fit="contain"><a href="../../.gitbook/assets/image (22).png">image (22).png</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Transit Graph </h3></td><td><span data-option="CC3yrvOgAGU1">Large</span></td><td>Shows the sun's position in the sky after applying the Transit modifier.</td><td data-object-fit="contain"><a href="../../.gitbook/assets/image (22).png">image (22).png</a></td></tr></tbody></table>
 
 ***
 

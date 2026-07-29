@@ -68,6 +68,7 @@
     * [Air Quality](under-the-hood/data-structures/climate/air-quality.md)
     * [UV Index](under-the-hood/data-structures/climate/uv-index.md)
     * [Precipitation Chance](under-the-hood/data-structures/climate/precipitation-chance.md)
+    * [Season](under-the-hood/data-structures/climate/season.md)
   * [Meridiem Architecture](under-the-hood/data-structures/meridiem-architecture/README.md)
     * [MeridiemTime](under-the-hood/data-structures/meridiem-architecture/meridiemtime.md)
     * [MeridiemTimeDelta](under-the-hood/data-structures/meridiem-architecture/meridiemtimedelta.md)
