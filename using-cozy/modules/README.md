@@ -20,7 +20,7 @@ A brand new COZY instance will either come pre-loaded with 4 basic modules or co
 
 To add a module using the UI, first [create a new COZY instance](../../setup/scene-setup.md) if you haven't already. Then use the add module button to open a dropdown of available modules.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Select the module that you want to add from the list, and it will appear as a part of your COZY instance
 

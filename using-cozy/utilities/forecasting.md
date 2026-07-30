@@ -22,7 +22,7 @@ The forecast window is your best friend when it comes to creating forecasts. It 
 
 The window lets you add weather profiles to the forecast. Once profiles are added, you can select them on the left panel to see what weather profiles may precede and follow it as well as the rules.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the right, you can adjust the weather profile's description, icon, and tag as well as their [chance.md](chance.md "mention").
 
@@ -54,7 +54,7 @@ Automatically selects profiles that overlap with the tag selection.
 
 ## Lateral Shifts
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Sometimes, a weather will play so long that the initial conditions that it was forecast for have changed so drastically that it doesn't make sense to continue playing. For example, a snow profile may play during a warming period during which the temperature rises from 30° F to 40° F over a few hours. When this occurs, we need to do a **lateral shift** to a related profile that doesn't break the rules.
 

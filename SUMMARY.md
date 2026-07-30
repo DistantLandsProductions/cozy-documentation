@@ -63,6 +63,7 @@
 * [Render Feature](under-the-hood/render-feature.md)
 * [Events](under-the-hood/events.md)
 * [Orientation](under-the-hood/orientation.md)
+* [Moon and Stars](under-the-hood/moon-and-stars.md)
 * [Data Structures](under-the-hood/data-structures/README.md)
   * [Climate](under-the-hood/data-structures/climate/README.md)
     * [Temperature](under-the-hood/data-structures/climate/temperature.md)

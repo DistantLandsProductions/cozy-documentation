@@ -12,7 +12,7 @@ COZY 4 uses a lightning attractor system that allows you to define areas that wi
 
 Begin by creating a new game object in your scene. This can be any object. Then, add the lightning attractor component to it
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Strike Events
 
@@ -20,7 +20,7 @@ Begin by creating a new game object in your scene. This can be any object. Then,
 
 The lightning attractor component comes with a public Unity Event that will be called when this attractor is struck by lightning. Use this to spawn explosion VFX, damage entities, etc.<br>
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### C\#
 

@@ -40,7 +40,7 @@ If you were to set an outcome (such as sunny) to have a chance of 2, this drasti
 
 While that helps to make certain weather types more rare than others, it does not necessarily reflect the real world. In the real world, the weather forecast has many factors that contribute to what happens outside our windows such as temperature, humidity, etc. This is reflected in COZY through the use of **chance effectors**. Chance effectors function as multipliers for our base chance by taking in a variable, charting it on a curve and outputting a multiplier
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In our simulation, there are several variables that we can choose from to change our base chance.
 

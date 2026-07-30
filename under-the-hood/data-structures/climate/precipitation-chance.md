@@ -9,7 +9,7 @@ Precipitation chance drives the forecasting of rain and snow [weather-profile.md
 {% hint style="info" %}
 You can also set these values directly if you prefer to! Simply set the `Rain Chance Calculation Mode` in the [climate-module](../../../using-cozy/modules/climate-module/ "mention") to `manual`&#x20;
 
-<p align="center"><img src="../../../.gitbook/assets/image.png" alt="" data-size="original"></p>
+<p align="center"><img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original"></p>
 {% endhint %}
 
 ## Convective Chance
