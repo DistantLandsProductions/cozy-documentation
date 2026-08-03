@@ -40,6 +40,8 @@ Your custom moon texture must have an active Alpha channel where the background 
 
 ## Stars
 
+COZY's stars are created using a cubemap. The cubemap may be rotated&#x20;
+
 ### Constellations
 
 
