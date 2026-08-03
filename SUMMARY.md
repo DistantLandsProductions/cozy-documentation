@@ -91,4 +91,5 @@
 
 ## Appendix
 
+* [Credits & Attribution](appendix/credits-and-attribution.md)
 * [FAQs](appendix/faqs.md)
