@@ -1,5 +1,8 @@
 ---
 icon: temperature-list
+tags:
+  - data
+  - api
 ---
 
 # Temperature
@@ -103,7 +106,7 @@ start.Add(boost);
 
 ## Temperature Delta
 
-The temperature delta struct represents a change in temperature. It can also be converted to other localizations, but will not offset them.&#x20;
+The temperature delta struct represents a change in temperature. It can also be converted to other localizations, but will not offset them.
 
 > 0°C is 32°F, but a change of 0°C is the same as a change of 0°F!
 

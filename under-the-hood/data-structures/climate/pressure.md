@@ -1,5 +1,8 @@
 ---
 icon: gauge
+tags:
+  - api
+  - data
 ---
 
 # Pressure
@@ -19,7 +22,7 @@ Pressure formatting and unit defaults adapt dynamically based on global settings
 
 <details>
 
-<summary>Initialization & Implicit Conversions</summary>
+<summary>Initialization &#x26; Implicit Conversions</summary>
 
 ```csharp
 using DistantLands.Cozy;
@@ -38,7 +41,7 @@ float rawValue = p1;
 
 <details>
 
-<summary>Conversions & Formatting</summary>
+<summary>Conversions &#x26; Formatting</summary>
 
 ```csharp
 Pressure p = new Pressure(1f, PressureUnit.Atmosphere);
@@ -69,7 +72,7 @@ Pressure p3 = Pressure.Parse("29.92"); // Uses CozyPreferences.PressureUnit
 
 <details>
 
-<summary>Interpolation & Arithmetic Operations</summary>
+<summary>Interpolation &#x26; Arithmetic Operations</summary>
 
 ```csharp
 Pressure start = new Pressure(1000f, PressureUnit.hPa);

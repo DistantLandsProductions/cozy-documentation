@@ -1,8 +1,11 @@
 ---
-icon: calendar-days
+icon: calendars
+tags:
+  - api
+  - data
 ---
 
-# Climate Data & Ranges
+# Season
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Data/Climate/ClimateRanges.cs" class="button secondary" data-icon="code">View on GitHub</a>
 
@@ -61,15 +64,13 @@ if (currentClimate.season == SeasonName.Summer && currentClimate.temperature > 3
 
 <table><thead><tr><th width="241.66668701171875">Method</th><th width="120.3333740234375">Return Type<select><option value="id_float" label="float" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>GetVariation(MeridiemDate, int)</code></td><td><span data-option="id_float">float</span></td><td>Calculates the variation modifier based on the date, the chosen <code>VariationType</code>, and the system seed.</td></tr></tbody></table>
 
-
 ### `ClimateRanges` Fields
 
 <table><thead><tr><th width="180">Field</th><th width="150">Type<select><option value="id_daily" label="DailyRange" color="blue"></option><option value="id_precip" label="PrecipitationChance" color="blue"></option><option value="id_season" label="SeasonName" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>temperature</code></td><td><span data-option="id_daily">DailyRange</span></td><td>Sets the daily range for temperature this season.</td></tr><tr><td><code>humidity</code></td><td><span data-option="id_daily">DailyRange</span></td><td>Sets the daily range for humidity this season.</td></tr><tr><td><code>pressure</code></td><td><span data-option="id_daily">DailyRange</span></td><td>Sets the daily range for pressure this season.</td></tr><tr><td><code>uvIndex</code></td><td><span data-option="id_daily">DailyRange</span></td><td>Sets the daily range for the UV index this season.</td></tr><tr><td><code>airQuality</code></td><td><span data-option="id_daily">DailyRange</span></td><td>Sets the daily range for the air quality this season.</td></tr><tr><td><code>stratiformRainChance</code></td><td><span data-option="id_precip">PrecipitationChance</span></td><td>Chance for lighter, longer storms. Used in seasonal calculation mode.</td></tr><tr><td><code>convectiveRainChance</code></td><td><span data-option="id_precip">PrecipitationChance</span></td><td>Chance for heavier, faster storms. Used in seasonal calculation mode.</td></tr><tr><td><code>season</code></td><td><span data-option="id_season">SeasonName</span></td><td>The name of the season for this climate range.</td></tr></tbody></table>
 
-
 ### `ClimateSnapshot` Fields
 
-<table><thead><tr><th width="180">Field</th><th width="150">Type<select><option value="id_prop" label="ClimateProperty" color="blue"></option><option value="id_precip" label="PrecipitationChance" color="blue"></option><option value="id_season" label="SeasonName" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>temperature</code></td><td><span data-option="id_prop">Temperature</span></td><td>The current temperature based on this snapshot.</td></tr><tr><td><code>humidity</code></td><td><span data-option="id_prop">Humidity</span></td><td>The current humidity based on this snapshot.</td></tr><tr><td><code>pressure</code></td><td><span data-option="id_prop">Pressure</span></td><td>The current pressure based on this snapshot.</td></tr><tr><td><code>uvIndex</code></td><td><span data-option="id_prop">UVIndex</span></td><td>The current UV index based on this snapshot.</td></tr><tr><td><code>airQuality</code></td><td><span data-option="id_prop">AirQuality</span></td><td>The current air quality based on this snapshot.</td></tr><tr><td><code>stratiformRainChance</code></td><td><span data-option="id_precip">PrecipitationChance</span></td><td>The current stratiform rain chance based on this snapshot.</td></tr><tr><td><code>convectiveRainChance</code></td><td><span data-option="id_precip">PrecipitationChance</span></td><td>The current convective rain chance based on this snapshot.</td></tr><tr><td><code>season</code></td><td><span data-option="id_season">SeasonName</span></td><td>The current season associated with this snapshot.</td></tr></tbody></table>
+<table><thead><tr><th width="180">Field</th><th width="150">Type<select><option value="id_prop" label="ClimateProperty" color="blue"></option><option value="id_precip" label="PrecipitationChance" color="blue"></option><option value="id_season" label="SeasonName" color="blue"></option></select></th><th>Description</th></tr></thead><tbody><tr><td><code>temperature</code></td><td><span data-option="id_prop">ClimateProperty</span></td><td>The current temperature based on this snapshot.</td></tr><tr><td><code>humidity</code></td><td><span data-option="id_prop">ClimateProperty</span></td><td>The current humidity based on this snapshot.</td></tr><tr><td><code>pressure</code></td><td><span data-option="id_prop">ClimateProperty</span></td><td>The current pressure based on this snapshot.</td></tr><tr><td><code>uvIndex</code></td><td><span data-option="id_prop">ClimateProperty</span></td><td>The current UV index based on this snapshot.</td></tr><tr><td><code>airQuality</code></td><td><span data-option="id_prop">ClimateProperty</span></td><td>The current air quality based on this snapshot.</td></tr><tr><td><code>stratiformRainChance</code></td><td><span data-option="id_precip">PrecipitationChance</span></td><td>The current stratiform rain chance based on this snapshot.</td></tr><tr><td><code>convectiveRainChance</code></td><td><span data-option="id_precip">PrecipitationChance</span></td><td>The current convective rain chance based on this snapshot.</td></tr><tr><td><code>season</code></td><td><span data-option="id_season">SeasonName</span></td><td>The current season associated with this snapshot.</td></tr></tbody></table>
 
 ### `Season` Fields
 
@@ -78,14 +79,18 @@ if (currentClimate.season == SeasonName.Summer && currentClimate.temperature > 3
 ## Enumerations
 
 ### `SeasonName`
+
 Specifies the four standard seasons:
-*   `Spring`
-*   `Summer`
-*   `Fall`
-*   `Winter`
+
+* `Spring`
+* `Summer`
+* `Fall`
+* `Winter`
 
 ### `VariationType` (Inside `DailyRange`)
+
 Defines the mathematical curve applied to the climate data's variation:
-*   `Sine`: A smooth wave, useful for predictable, cyclical patterns (like temperature peaks in the afternoon).
-*   `Noise`: Uses Perlin noise for unpredictable, chaotic variation.
-*   `None`: Disables variation.
+
+* `Sine`: A smooth wave, useful for predictable, cyclical patterns (like temperature peaks in the afternoon).
+* `Noise`: Uses Perlin noise for unpredictable, chaotic variation.
+* `None`: Disables variation.

@@ -1,5 +1,8 @@
 ---
 icon: fan
+tags:
+  - api
+  - data
 ---
 
 # Air Quality

@@ -1,5 +1,8 @@
 ---
 icon: cloud-drizzle
+tags:
+  - api
+  - data
 ---
 
 # Precipitation Chance
@@ -7,9 +10,9 @@ icon: cloud-drizzle
 Precipitation chance drives the forecasting of rain and snow [weather-profile.md](../../../using-cozy/profiles/weather-profile.md "mention")s. Rather than have a single precipitation chance value, the chance is broken down into two values: stratiform and convective chance. These are two different rain chance types that break down rain chance into two more usable values. Light rain and heavy rain may _seem_ like the same type of thing, but the way that you get to either of these and what happens after each type of weather is very different.
 
 {% hint style="info" %}
-You can also set these values directly if you prefer to! Simply set the `Rain Chance Calculation Mode` in the [climate-module](../../../using-cozy/modules/climate-module/ "mention") to `manual`&#x20;
+You can also set these values directly if you prefer to! Simply set the `Rain Chance Calculation Mode` in the [climate-module](../../../using-cozy/modules/climate-module/ "mention") to `manual`
 
-<p align="center"><img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original"></p>
+<img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original">
 {% endhint %}
 
 ## Convective Chance

@@ -1,5 +1,8 @@
 ---
 icon: sun
+tags:
+  - api
+  - data
 ---
 
 # UV Index

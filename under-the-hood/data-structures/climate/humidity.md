@@ -1,5 +1,8 @@
 ---
 icon: droplet
+tags:
+  - data
+  - api
 ---
 
 # Humidity
