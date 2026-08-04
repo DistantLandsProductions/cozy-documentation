@@ -5,9 +5,9 @@ tags:
   - data
 ---
 
-# Season
+# Climate Data Structs
 
-<a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Data/Climate/ClimateRanges.cs" class="button secondary" data-icon="code">View on GitHub</a>
+<a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Data/Climate/Season.cs" class="button secondary" data-icon="code">View on GitHub</a>
 
 The climate data structs—`ClimateRanges`, `DailyRange<T, D>`, `ClimateSnapshot`, and `Season`—handle the complex, time-based variations of climate properties. They manage everything from small daily fluctuations (like temperature drops at night) to large-scale seasonal shifts.
 
