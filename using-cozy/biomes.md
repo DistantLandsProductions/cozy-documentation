@@ -1,5 +1,7 @@
 ---
 icon: cube
+tags:
+  - biome
 ---
 
 # Biomes

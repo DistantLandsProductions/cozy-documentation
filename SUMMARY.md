@@ -2,7 +2,6 @@
 
 * [Welcome!](README.md)
 * [What's New?](whats-new.md)
-* [Support](support.md)
 
 ## Setup
 
@@ -93,3 +92,10 @@
 
 * [Credits & Attribution](appendix/credits-and-attribution.md)
 * [FAQs](appendix/faqs.md)
+
+***
+
+* [Email](mailto:contact@distantlands.space)
+* [Discord](https://discord.gg/HWGU4hj)
+* [GitHub](https://github.com/DistantLandsProductions/space.distantlands.cozyweather.core)
+* [Store](https://assetstore.unity.com/publishers/40676)

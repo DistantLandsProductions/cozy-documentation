@@ -48,7 +48,7 @@ Sets the date format for editor fields. This is used to decide which comes first
 
 ### Months
 
-Sets the default year used in your project. Each month contains a name and an integer determining the number of days in that month. COZY does not support leap years currently. If this is a needed feature for you, feel free to let us know! [support.md](../support.md "mention")
+Sets the default year used in your project. Each month contains a name and an integer determining the number of days in that month. COZY does not support leap years currently. If this is a needed feature for you, feel free to let us know! [Broken link](/broken/pages/dU6NO1ucSMJQPZIHTWba "mention")
 
 ### Starting Weekday
 

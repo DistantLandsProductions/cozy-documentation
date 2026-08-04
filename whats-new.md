@@ -1,5 +1,5 @@
 ---
-description: The road from 3.7 to 4.0
+description: The road from 3.6 to 4.0
 icon: burst-new
 ---
 
