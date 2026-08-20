@@ -7,7 +7,7 @@ icon: burst-new
 
 COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality, UI/UX, performance, and exciting things like code hygiene and architectural changes
 
-### Visuals
+## Visuals
 
 * Fog
   * New froxel-based volumetric fog
@@ -23,7 +23,7 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
   * Sun and moon can now have a minimum angle to prevent dark scenes
   * Shadow intensity can now be controlled by the atmosphere module
 
-### Functionality
+## Functionality
 
 * Meridiem System
   * After the introduction of the meridiem time struct in COZY 3, now even more systems in COZY will be utilizing this method for data storage
@@ -37,8 +37,7 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
 * New Integrations System
   * Integrations are no longer modules but located in a separate tab
   * Integrations can now automatically update ShaderGraph files when needed
-  * New integrations for the following assets
-    *
+  * New integrations for the following assets \*
 * New Climate data
   * Rather than using animation curves, COZY 4 defines four seasons that interpolate all properties based on the time of year.
   * Seasons define 5 changing properties: temperature, humidity, air pressure, UV index, and air quality.
@@ -70,7 +69,7 @@ COZY 4 focuses on improving a few key aspects of COZY 3: visuals, functionality,
   * COZY no longer follows the main camera automatically
   * New [track-point.md](using-cozy/utilities/track-point.md "mention") component lets you quickly specify a location for VFX and biome calculations.
 
-### UI/UX
+## UI/UX
 
 * Dynamic Icon System
   * COZY modules will automatically update their icons to show you how changes to one module impact the system as a whole
