@@ -4,7 +4,7 @@ icon: quote-left
 
 # Release Notes
 
-## COZY 4.0.0
+## v4.0.0
 
 ### Added:
 
