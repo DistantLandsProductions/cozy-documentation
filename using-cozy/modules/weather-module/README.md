@@ -47,11 +47,11 @@ Selecting the next weather can be done through a variety of methods.
 
 <details>
 
-<summary>Set the Current Weather </summary>
+<summary>Set the Current Weather</summary>
 
 ```csharp
 // Sets the current weather
-CozyWeather.Instance.Weather.SetWeather(yourProfile);
+CozyWeather.Instance.Weather.SetProfile(yourProfile);
 ```
 
 </details>
@@ -62,7 +62,7 @@ CozyWeather.Instance.Weather.SetWeather(yourProfile);
 
 ```csharp
 // Get the time till the weather changes in MeridiemTimeDelta format
-MeridiemTimeDelta timeTillWeatherChange = CozyWeather.Instance.Weather.WeatherTimer;
+MeridiemTimeDelta timeTillWeatherChange = CozyWeather.Instance.Weather.TimeTillProfileChange;
 ```
 
 </details>
@@ -73,10 +73,10 @@ MeridiemTimeDelta timeTillWeatherChange = CozyWeather.Instance.Weather.WeatherTi
 
 ```csharp
 // Get the current weather profile
-WeatherProfile currentWeather = CozyWeather.Instance.Weather.CurrentWeather;
+WeatherProfile currentWeather = CozyWeather.Instance.Weather.CurrentProfile;
 
 // To get the current local weather (before biomes are applied), use the local parameter
-WeatherProfile currentLocalWeather = CozyWeather.Instance.Weather.CurrentLocalWeather;
+WeatherProfile currentLocalWeather = CozyWeather.Instance.Weather.CurrentLocalProfile;
 ```
 
 </details>
@@ -93,18 +93,16 @@ void OnWeatherChange(WeatherProfile oldProfile, WeatherProfile newProfile)
 
 void OnEnable() 
 {
-    CozyWeather.Instance.Weather.OnWeatherChange += OnWeatherChange;
+    CozyWeather.Instance.Weather.OnProfileChange += OnWeatherChange;
 }
 
 void OnDisable() 
 {
-    CozyWeather.Instance.Weather.OnWeatherChange -= OnWeatherChange;
+    CozyWeather.Instance.Weather.OnProfileChange -= OnWeatherChange;
 }
 ```
 
 </details>
-
-
 
 ## Widgets
 
@@ -118,4 +116,4 @@ Biomes can also have a fully featured weather module.
 
 ### Interfaces
 
-<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3><i class="fa-clouds">:clouds:</i></h3></td><td align="center">IWeatherModule</td><td><a href="iweathermodule.md">iweathermodule.md</a></td></tr><tr><td align="center"><h3><i class="fa-forward-fast">:forward-fast:</i></h3></td><td align="center">ISkippable</td><td><a href="../extra-interfaces/iskippable.md">iskippable.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3><i class="fa-clouds">:clouds:</i></h3></td><td align="center">IWeatherModule</td><td><a href="iweathermodule.md">iweathermodule.md</a></td></tr><tr><td align="center"><h3><i class="fa-forward-fast">:forward-fast:</i></h3></td><td align="center">ISkippable</td><td><a href="../extra-interfaces/iskippable.md">iskippable.md</a></td></tr><tr><td align="center"><h3><i class="fa-arrows-turn-to-dots">:arrows-turn-to-dots:</i></h3></td><td align="center">State Machine</td><td><a href="../extra-interfaces/cozystatemachinemodule-less-than-t-greater-than.md">cozystatemachinemodule-less-than-t-greater-than.md</a></td></tr></tbody></table>

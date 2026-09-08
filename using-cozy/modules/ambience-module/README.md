@@ -33,7 +33,7 @@ The ambience module is _not_ a complete weather module, rather it is designed to
 // Get the ambience module
 CozyAmbienceModule ambience = CozyWeather.Instance.Ambience;
 
-ambience.SetAmbience(ambienceProfile);
+ambience.SetProfile(ambienceProfile);
 ```
 
 </details>
@@ -47,7 +47,7 @@ ambience.SetAmbience(ambienceProfile);
 CozyAmbienceModule ambience = CozyWeather.Instance.Ambience;
 
 // Get the current ambience profile
-AmbienceProfile ambienceProfile = ambience.CurrentProfile
+AmbienceProfile ambienceProfile = ambience.CurrentProfile;
 ```
 
 </details>
@@ -64,12 +64,12 @@ void OnChange(AmbienceProfile oldProfile, AmbienceProfile newProfile)
 
 void OnEnable() 
 {
-    CozyWeather.Instance.Ambience.OnAmbienceChange += OnChange;
+    CozyWeather.Instance.Ambience.OnProfileChange += OnChange;
 }
 
 void OnDisable() 
 {
-    CozyWeather.Instance.Ambience.OnAmbienceChange -= OnChange;
+    CozyWeather.Instance.Ambience.OnProfileChange -= OnChange;
 }
 ```
 
@@ -83,4 +83,4 @@ Biomes can also have a fully featured ambience module.
 
 ### Interfaces
 
-<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3><i class="fa-sun-dust">:sun-dust:</i></h3></td><td align="center">IAmbienceModule</td><td><a href="../weather-module/iweathermodule.md">iweathermodule.md</a></td></tr><tr><td align="center"><h3><i class="fa-forward-fast">:forward-fast:</i></h3></td><td align="center">ISkippable</td><td><a href="../extra-interfaces/iskippable.md">iskippable.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h3><i class="fa-sun-dust">:sun-dust:</i></h3></td><td align="center">IAmbienceModule</td><td><a href="../weather-module/iweathermodule.md">iweathermodule.md</a></td></tr><tr><td align="center"><h3><i class="fa-forward-fast">:forward-fast:</i></h3></td><td align="center">ISkippable</td><td><a href="../extra-interfaces/iskippable.md">iskippable.md</a></td></tr><tr><td align="center"><h3><i class="fa-arrows-turn-to-dots">:arrows-turn-to-dots:</i></h3></td><td align="center">StateMachineModule</td><td><a href="../extra-interfaces/cozystatemachinemodule-less-than-t-greater-than.md">cozystatemachinemodule-less-than-t-greater-than.md</a></td></tr></tbody></table>

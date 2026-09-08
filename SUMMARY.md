@@ -36,6 +36,7 @@
   * [Ambience Module](using-cozy/modules/ambience-module/README.md)
     * [IAmbienceModule](using-cozy/modules/ambience-module/iambiencemodule.md)
   * [Extra Interfaces](using-cozy/modules/extra-interfaces/README.md)
+    * [CozyStateMachineModule\<T>](using-cozy/modules/extra-interfaces/cozystatemachinemodule-less-than-t-greater-than.md)
     * [ISkippable](using-cozy/modules/extra-interfaces/iskippable.md)
     * [ISaveable](using-cozy/modules/extra-interfaces/isaveable.md)
 * [Profiles](using-cozy/profiles/README.md)
@@ -57,6 +58,7 @@
 ## Extensions
 
 * [Blocks](extensions/blocks.md)
+* [ReSound](extensions/resound.md)
 
 ## Under The Hood
 
