@@ -24,14 +24,6 @@ The Atmosphere Module works by collecting parameters from atmosphere profiles an
 * **Cloud Layers**: Volumetric clouds and procedural 2D cloud layers
 * **Lighting**: Sun and moon light management, ambient lighting, lens flares, and shadow configuration
 
-### Static Data
-
-The atmosphere module only applies data in the form of [atmosphere-profile.md](../../profiles/atmosphere-profile.md "mention")s. These are static collections of atmosphere data that _do not change at runtime_. Each instance of an atmosphere profile is directly tied to data saved in your project.
-
-{% hint style="warning" %}
-For ease of use, the overrides included in an atmosphere module are exposed in the inspector for the atmosphere module once it is assigned. This means that editing atmosphere overrides in the Atmosphere module do not only apply to that specific instance of COZY and will apply to any other system using that atmosphere profile!
-{% endhint %}
-
 ### Lifecycle
 
 Every frame, interpolated data from the dynamic fields in the atmosphere profile are bundled in an Atmosphere Parameters struct. This is then passed through the module throughout the duration of the frame and then passed to the shader. The parameters data is then recycled the following frame to prevent GC.
@@ -65,6 +57,28 @@ Biome --> ABSG["After Biomes"]
 ABSG --> Send["Send to Shader"]
 ABSG --> Reuse["Recycle Next Frame"]
 ```
+
+## Working with the Atmosphere
+
+### Select a Base Profile
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+
+When opening the Atmosphere module, you will see a dropwdown for you to select a base profile. This sets the overarching paramters based on a preset set of values, specifcally tuned for a certain style or aesthetic.
+
+<figure><img src="../../../.gitbook/assets/image (38).png" alt="" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Unable to find a preset you like? Tune the preset settings to broadly change multiple settings at once to get a good base that is easy to work with!
+{% endhint %}
+
+### Add Overrides for Customization
+
+After selecting a good base profile, add individual overrides to change aspects of the preset. These are divided into different [features](../../features/ "mention") that you can control.
+
+For example, if you want to increase the density of the fog, you can add a override&#x20;
+
+For help finding specific settings, take a look at the [features](../../features/ "mention") page and its sub pages. These list out all of the settings that can be controlled by overrides.
 
 ## Usage Examples
 
@@ -158,7 +172,7 @@ else
 
 ## Widgets
 
-<table data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Override Count </h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the number of overrides on the current atmosphere profile.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/image (21).png">image (21).png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th><select><option value="OBED6ZmA2lxZ" label="Small" color="blue"></option><option value="FZGc4BhztoCa" label="Medium" color="blue"></option><option value="CC3yrvOgAGU1" label="Large" color="blue"></option></select></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h3>Override Count</h3></td><td><span data-option="OBED6ZmA2lxZ">Small</span></td><td>Displays the number of overrides on the current atmosphere profile.</td><td data-object-fit="contain"><a href="../../../.gitbook/assets/image (21).png">image (21).png</a></td></tr></tbody></table>
 
 ## Biome Integration
 
