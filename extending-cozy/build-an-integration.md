@@ -127,16 +127,16 @@ This works hand in hand with the `ApplyIntegration()` and `UnapplyIntegration()`
 
 {% code expandable="true" %}
 ```csharp
-        public override bool CheckStatus(out string errorMessage)
+        public override StstusType CheckStatus(out string errorMessage)
         {
             if (yourIntegration.Instance) {
                 errorMessage = "";
-                return true;
+                return StatusType.Pass;
             }
             else 
             {
                 errorMessage = "No instance in the scene!";
-                return false;
+                return StatusType.Fail;
             }
         }
 ```
