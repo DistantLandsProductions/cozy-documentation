@@ -194,11 +194,25 @@ Any public properties in the class are automatically exposed to the settings win
 ```csharp
     public class CustomCozyIntegration : CozyIntegration
     {
-        public float floatA;
-        public bool boolB;
+        public float floatA = 1;
+        public bool boolB = false;
         ...
 ```
 {% endcode %}
+
+{% hint style="info" %}
+**NOTE:** You need to assign a default value to properties in order for them to appear in the inspector.
+
+```csharp
+// Will appear
+public float floatA = 1;
+public bool boolB = false;
+
+// Will not appear
+public float floatC;
+public bool boolD;
+```
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
