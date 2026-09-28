@@ -36,7 +36,7 @@ To remove a module, simply right click on the module icon and select remove from
 
 ### Building Your Own Modules
 
-See more here: [build-a-module.md](../../extending-cozy/build-a-module.md "mention")
+See more here: [build-a-module](../../extending-cozy/build-a-module/ "mention")
 
 ## API
 

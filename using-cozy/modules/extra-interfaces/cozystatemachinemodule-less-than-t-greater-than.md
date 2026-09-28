@@ -18,7 +18,7 @@ Many modules in COZY require a state machine in order to function properly. Most
 Using this parent class, it is simple to build your own modules that use a state machine fro whatever features you need to implment! This example uses a pre-set queue to play profiles one after the other.
 
 {% hint style="info" %}
-See [build-a-module.md](../../../extending-cozy/build-a-module.md "mention") for more information on how to build your own modules to extend COZY
+See [build-a-module](../../../extending-cozy/build-a-module/ "mention") for more information on how to build your own modules to extend COZY
 {% endhint %}
 
 {% stepper %}

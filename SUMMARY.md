@@ -82,11 +82,20 @@
     * [MeridiemBlock](under-the-hood/data-structures/meridiem-architecture/meridiemblock.md)
     * [MeridiemEvent](under-the-hood/data-structures/meridiem-architecture/meridiemevent.md)
 * [Integrations](under-the-hood/integrations/README.md)
+  * [Buto](under-the-hood/integrations/buto.md)
+  * [Crest 5](under-the-hood/integrations/crest-5.md)
+  * [Pure Nature 2](under-the-hood/integrations/pure-nature-2.md)
+  * [MicroSplat](under-the-hood/integrations/microsplat.md)
+  * [Stylized Water 3](under-the-hood/integrations/stylized-water-3.md)
+  * [Stylized Grass 2](under-the-hood/integrations/stylized-grass-2.md)
   * [The Visual Engine](under-the-hood/integrations/the-visual-engine.md)
+  * [Zephyr](under-the-hood/integrations/zephyr.md)
 
 ## Extending COZY
 
-* [Build a Module](extending-cozy/build-a-module.md)
+* [Build a Module](extending-cozy/build-a-module/README.md)
+  * [Build a Biome Module](extending-cozy/build-a-module/build-a-biome-module.md)
+  * [Build a State Machine Module](extending-cozy/build-a-module/build-a-state-machine-module.md)
 * [Build an Integration](extending-cozy/build-an-integration.md)
 * [Build a Custom FX Profile](extending-cozy/build-a-custom-fx-profile.md)
 * [Inject a Shader](extending-cozy/inject-a-shader.md)

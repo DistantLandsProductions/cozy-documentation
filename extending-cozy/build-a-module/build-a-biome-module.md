@@ -1,9 +1,9 @@
 ---
 tags:
-  - api
   - tutorial
+  - api
   - module
 ---
 
-# Build a Module
+# Build a Biome Module
 
