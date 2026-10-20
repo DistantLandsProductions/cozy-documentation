@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome!](README.md)
-* [What's New?](whats-new.md)
 * [Release Notes](release-notes.md)
 
 ## Setup

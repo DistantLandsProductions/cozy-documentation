@@ -24,6 +24,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # Welcome!
@@ -46,13 +48,9 @@ This documentation is built to support you from your first installation through 
 
 ***
 
-<table data-view="cards"><thead><tr><th align="center"></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h2><i class="fa-rocket-launch" style="color:$primary;">:rocket-launch:</i></h2></td><td><h3>Setup Guide</h3></td><td>Install the package, setup your project, and get started using COZY in minutes</td><td><a href="setup/project-setup.md">project-setup.md</a></td></tr><tr><td align="center"><h2><i class="fa-circle-up" style="color:$primary;">:circle-up:</i></h2></td><td><h3>New in COZY 4</h3></td><td>Take a look at some of the most important changes from version 3</td><td><a href="whats-new.md">whats-new.md</a></td></tr><tr><td align="center"><h2><i class="fa-file" style="color:$primary;">:file:</i></h2></td><td><h3>Learn More</h3></td><td>Take a deep dive in the documentation to learn how to get the most out of COZY</td><td><a href="using-cozy/cozy-instance.md">cozy-instance.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h2><i class="fa-rocket-launch" style="color:$primary;">:rocket-launch:</i></h2></td><td><h3>Setup Guide</h3></td><td>Install the package, setup your project, and get started using COZY in minutes</td><td><a href="setup/project-setup.md">project-setup.md</a></td></tr><tr><td align="center"><h2><i class="fa-circle-up" style="color:$primary;">:circle-up:</i></h2></td><td><h3>New in COZY 4</h3></td><td>Take a look at some of the most important changes from version 3</td><td><a href="release-notes.md">release-notes.md</a></td></tr><tr><td align="center"><h2><i class="fa-file" style="color:$primary;">:file:</i></h2></td><td><h3>Learn More</h3></td><td>Take a deep dive in the documentation to learn how to get the most out of COZY</td><td><a href="using-cozy/cozy-instance.md">cozy-instance.md</a></td></tr></tbody></table>
 
 ***
-
-
-
-
 
 <h3 align="center">Connect With Us</h3>
 
