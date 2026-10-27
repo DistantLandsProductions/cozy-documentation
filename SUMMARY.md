@@ -2,6 +2,7 @@
 
 * [Welcome!](README.md)
 * [Release Notes](release-notes.md)
+* [API Changes](api-changes.md)
 
 ## Setup
 
