@@ -58,7 +58,7 @@ ABSG --> Send["Send to Shader"]
 ABSG --> Reuse["Recycle Next Frame"]
 ```
 
-## Working with the Atmosphere
+## Workflow
 
 ### Select a Base Profile
 
@@ -70,13 +70,25 @@ When opening the Atmosphere module, you will see a dropwdown for you to select a
 
 {% hint style="info" %}
 Unable to find a preset you like? Tune the preset settings to broadly change multiple settings at once to get a good base that is easy to work with!
+
+Presets are static data so after making changes you can either overwrite the original profile or save it as a new profile!
 {% endhint %}
 
 ### Add Overrides for Customization
 
 After selecting a good base profile, add individual overrides to change aspects of the preset. These are divided into different [features](../../features/ "mention") that you can control.
 
-For example, if you want to increase the density of the fog, you can add a override&#x20;
+For example, if you want to increase the density of the fog, you can add a [fog.md](../../features/fog.md "mention") Base override and change the density multiplier.
+
+{% columns %}
+{% column %}
+<figure><img src="../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+<figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
 
 For help finding specific settings, take a look at the [features](../../features/ "mention") page and its sub pages. These list out all of the settings that can be controlled by overrides.
 
