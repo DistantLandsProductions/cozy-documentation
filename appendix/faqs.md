@@ -4,7 +4,7 @@
 
 ### Runtime
 
-{% file src="../.gitbook/assets/20260916-1837-54.2198076 (1).mp4" %}
+{% file src="../.gitbook/assets/20260916-1837-54.2198076.mp4" %}
 
 If you see a shimmering artifact in the distant clouds when moving the camera up or down, this is likely caused by a low step count stepping over the LOD transtions. This is a performance saving measure, but has the tradeoff of reduced quality. If your project has rapid elevation gain or occurs in the clouds, you may want to adjust your settings to have a higher step count and a lower LOD coefficient.
 

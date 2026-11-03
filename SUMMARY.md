@@ -99,6 +99,7 @@
 * [Build an Integration](extending-cozy/build-an-integration.md)
 * [Build a Custom FX Profile](extending-cozy/build-a-custom-fx-profile.md)
 * [Inject a Shader](extending-cozy/inject-a-shader.md)
+* [Code Generation](extending-cozy/code-generation.md)
 
 ## Appendix
 
