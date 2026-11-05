@@ -19,6 +19,12 @@ The fourth major update to COZY: Weather is finally here! This update brings man
 * Screenspace Sunshafts: Dedicated screenspace sunshafts feature for dynamic atmosphere lighting.
 * Renderer Feature Architecture: Moved from nested spheres to a Renderer Feature approach for seamless integration and rendering with Unity 7.
 * VFX Graph Integration: Most particle systems (including stylized lightning effects) have been migrated to Unity's VFX Graph.
+* Lighting Tweaks:
+  * Added light quantization for the sun and moon to prevent light jitter.
+  * Sun/moon minimum angles to ensure scenes never become unnaturally dark.
+  * Two-tone fog and sky coloring for better depth perception.
+  * Twinkling stars and constellation effects.
+  * Moon lighting now reacts dynamically to active atmosphere modules and phases.
 
 #### Gameplay & Functionality
 
@@ -54,7 +60,6 @@ The fourth major update to COZY: Weather is finally here! This update brings man
 * Updated COZY Home UX:
   * Interactive Widgets: Modify settings directly from the main view without navigating deep into individual modules. Support for multiple widgets per module and right-click visibility toggling.
   * Module Header Navigation: Module selection row remains fixed at the top of the editor for instant switching.
-  * Dynamic Module Icons: Displays live status indicators and real-time environment updates at a glance.
 * Module-Specific Inspector UI Improvements:
   * Atmosphere: Clean modular layouts that automatically warn you if computation is being wasted on disabled/unused features.
   * Time: Integrated calendar view, AM/PM vs. military time toggle, and scheduled event tracker.
@@ -68,12 +73,6 @@ The fourth major update to COZY: Weather is finally here! This update brings man
 
 * Interface-Driven Architecture: Modules now implement dedicated interfaces (`ITime`, `ICalendar`, `ICalendarEvents`, etc.) rather than hard-coded script references, enabling drop-in custom systems.
 * Zero GC Allocation: Core runtime functions called per-frame are strictly garbage-free.
-* Lighting Tweaks:
-  * Added light quantization for the sun and moon to prevent light jitter.
-  * Sun/moon minimum angles to ensure scenes never become unnaturally dark.
-  * Two-tone fog and sky coloring for better depth perception.
-  * Twinkling stars and constellation effects.
-  * Moon lighting now reacts dynamically to active atmosphere modules and phases.
 
 ### Migration Notes
 
