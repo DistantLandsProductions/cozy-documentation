@@ -40,8 +40,22 @@
     * [ISkippable](using-cozy/modules/extra-interfaces/iskippable.md)
     * [ISaveable](using-cozy/modules/extra-interfaces/isaveable.md)
 * [Profiles](using-cozy/profiles/README.md)
+  * [Profile Overview](using-cozy/profiles/profile-overview.md)
   * [FX Profiles](using-cozy/profiles/fx-profiles/README.md)
+    * [Audio FX](using-cozy/profiles/fx-profiles/audio-fx.md)
+    * [Cloud FX](using-cozy/profiles/fx-profiles/cloud-fx.md)
+    * [Climate FX](using-cozy/profiles/fx-profiles/climate-fx.md)
+    * [Event FX](using-cozy/profiles/fx-profiles/event-fx.md)
+    * [Filter FX](using-cozy/profiles/fx-profiles/filter-fx.md)
+    * [Fog FX](using-cozy/profiles/fx-profiles/fog-fx.md)
+    * [Multi FX](using-cozy/profiles/fx-profiles/multi-fx.md)
+    * [Particle FX](using-cozy/profiles/fx-profiles/particle-fx.md)
+    * [Post Processing FX](using-cozy/profiles/fx-profiles/post-processing-fx.md)
+    * [Precipitation FX](using-cozy/profiles/fx-profiles/precipitation-fx.md)
     * [Thunder FX](using-cozy/profiles/fx-profiles/thunder-fx.md)
+    * [Visual Effect Graph FX](using-cozy/profiles/fx-profiles/visual-effect-graph-fx.md)
+    * [Wind FX](using-cozy/profiles/fx-profiles/wind-fx.md)
+  * [Climate Profile](using-cozy/profiles/climate-profile.md)
   * [Atmosphere Profile](using-cozy/profiles/atmosphere-profile.md)
   * [Forecast Profile](using-cozy/profiles/forecast-profile.md)
   * [Ambience Profile](using-cozy/profiles/ambience-profile.md)
@@ -58,6 +72,9 @@
 ## Extensions
 
 * [Blocks](extensions/blocks.md)
+* [Eclipse](extensions/eclipse.md)
+* [Horizon](extensions/horizon.md)
+* [Link](extensions/link.md)
 * [ReSound](extensions/resound.md)
 
 ## Under The Hood
