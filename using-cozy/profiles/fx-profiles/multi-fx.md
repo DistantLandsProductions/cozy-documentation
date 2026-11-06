@@ -1,5 +1,5 @@
 ---
-icon: layers
+icon: chart-simple
 ---
 
 # Multi FX
@@ -12,8 +12,8 @@ icon: layers
 
 `MultiFX` stores a list of `MultiFXType` entries:
 
-- `CozyFXProfile FX`
-- `WeightedChanceCurve intensityCurve`
+* `CozyFXProfile FX`
+* `WeightedChanceCurve intensityCurve`
 
 When the parent FX is active, each child FX is invoked with a per-item intensity derived from the current conditions and the active weather weight.
 
@@ -33,6 +33,6 @@ Instead of manually chaining many separate profiles, Multi FX provides a single 
 
 ## Notes
 
-- This is a compositional profile for combining multiple FX assets into one effect bundle.
-- It can be used to simplify complex weather states.
-- Each child effect is still a real `CozyFXProfile`, so the underlying effect system remains modular.
+* This is a compositional profile for combining multiple FX assets into one effect bundle.
+* It can be used to simplify complex weather states.
+* Each child effect is still a real `CozyFXProfile`, so the underlying effect system remains modular.

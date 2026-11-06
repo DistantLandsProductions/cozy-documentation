@@ -41,7 +41,6 @@
     * [ISkippable](using-cozy/modules/extra-interfaces/iskippable.md)
     * [ISaveable](using-cozy/modules/extra-interfaces/isaveable.md)
 * [Profiles](using-cozy/profiles/README.md)
-  * [Profile Overview](using-cozy/profiles/profile-overview.md)
   * [FX Profiles](using-cozy/profiles/fx-profiles/README.md)
     * [Audio FX](using-cozy/profiles/fx-profiles/audio-fx.md)
     * [Cloud FX](using-cozy/profiles/fx-profiles/cloud-fx.md)

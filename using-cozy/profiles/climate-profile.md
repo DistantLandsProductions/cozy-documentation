@@ -1,5 +1,4 @@
 ---
-icon: thermometer
 tags:
   - profile
   - climate
@@ -16,19 +15,19 @@ A climate profile defines the seasonal envelope that COZY uses to generate reali
 
 The climate profile acts as the long-term baseline for the weather simulation. It stores four `Season` entries:
 
-- `spring`
-- `summer`
-- `fall`
-- `winter`
+* `spring`
+* `summer`
+* `fall`
+* `winter`
 
 Each season contains a `ClimateRanges` payload with values for:
 
-- temperature
-- humidity
-- pressure
-- UV index
-- precipitation chance and related climate data
-- seasonal metadata
+* temperature
+* humidity
+* pressure
+* UV index
+* precipitation chance and related climate data
+* seasonal metadata
 
 COZY then blends those ranges to produce the current climate state for the active date and time.
 
@@ -54,12 +53,12 @@ public class ClimateProfile : CozyProfile
 
 Key members:
 
-- `Season spring`
-- `Season summer`
-- `Season fall`
-- `Season winter`
-- `SeasonalTemperatureSmoothness temperatureSmoothness`
-- `void GetClimateRanges(MeridiemDate date, out ClimateRanges climateRanges)`
+* `Season spring`
+* `Season summer`
+* `Season fall`
+* `Season winter`
+* `SeasonalTemperatureSmoothness temperatureSmoothness`
+* `void GetClimateRanges(MeridiemDate date, out ClimateRanges climateRanges)`
 
 ### `SeasonalTemperatureSmoothness`
 
@@ -91,6 +90,6 @@ if (climateProfile != null)
 
 ## Notes
 
-- Climate profiles are global seasonal baselines rather than direct weather states.
-- The active `WeatherProfile` can still override the scene mood, but the climate profile gives the system believable long-term behavior.
-- `temperatureSmoothness` is especially useful when you want seasonal changes to feel natural instead of abrupt.
+* Climate profiles are global seasonal baselines rather than direct weather states.
+* The active `WeatherProfile` can still override the scene mood, but the climate profile gives the system believable long-term behavior.
+* `temperatureSmoothness` is especially useful when you want seasonal changes to feel natural instead of abrupt.
