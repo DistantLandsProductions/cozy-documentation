@@ -38,7 +38,7 @@ COZY: Stylized Weather is a complete, modular environmental system designed to g
 {% endcolumn %}
 
 {% column valign="middle" %}
-{% embed url="https://www.youtube.com/watch?v=uY1uGIZfGZ0" %}
+{% embed url="https://www.youtube.com/watch?v=F-ZCoxR-rQI" %}
 {% endcolumn %}
 {% endcolumns %}
 
@@ -55,3 +55,11 @@ This documentation is built to support you from your first installation through 
 <h3 align="center">Connect With Us</h3>
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4><i class="fa-discord">:discord:</i></h4></td><td><strong>Discord community</strong></td><td>Join our Discord community to post questions, get help, and share resources with over 2,000 like-minded developers.</td><td><a href="https://discord.gg/HWGU4hj" class="button secondary">Join Discord</a></td><td><a href=".gitbook/assets/Discord.png">Discord.png</a></td></tr><tr><td><h4><i class="fa-github">:github:</i></h4></td><td><strong>GitHub</strong></td><td>After your <a href="/broken/pages/4sxc5i0kWXD5sQgPQvaz">invoice is verified</a>, use the GitHub release of Zephyrus for access to the latest version and faster bug fixes.</td><td><a href="https://github.com/DistantLandsProductions/space.distantlands.cozyweather.core" class="button secondary">View Repository</a></td><td><a href=".gitbook/assets/GitHub.png">GitHub.png</a></td></tr><tr><td><i class="fa-envelope">:envelope:</i></td><td><strong>Email</strong></td><td>We'd love to hear from you directly! For more sensitive requests or direct support, feel free to reach out to us at contact@distantlands.space</td><td><a href="mailto:contact@distantlands.space" class="button secondary">Send an Email</a></td><td><a href=".gitbook/assets/Email.png">Email.png</a></td></tr><tr><td><i class="fa-browser">:browser:</i></td><td><strong>Website</strong></td><td>Come visit our website for more information about Distant Lands</td><td><a href="https://distantlands.space/" class="button secondary">Visit Distant Lands</a></td><td><a href=".gitbook/assets/Website.png">Website.png</a></td></tr><tr><td><i class="fa-unity">:unity:</i></td><td><strong>Unity Asset Store</strong></td><td>Come check out our other assets!</td><td><a href="https://assetstore.unity.com/publishers/40676" class="button secondary">View Store</a></td><td><a href=".gitbook/assets/Unity.png">Unity.png</a></td></tr><tr><td><i class="fa-youtube">:youtube:</i></td><td><strong>YouTube</strong></td><td>For showcases, tutorials and more, visit our YouTube channel. subscribe to stay up to date on new projects!</td><td><a href="https://www.youtube.com/channel/UCXQh-98ACis92hNY0Qookvw" class="button secondary">View Channel</a></td><td><a href=".gitbook/assets/YouTube.png">YouTube.png</a></td></tr></tbody></table>
+
+### View On Github
+
+Do you hate reading documentation? Us too.
+
+COZY 4's documentation is also hosted on GitHub so you can point your personal AI to it and let it do the reading for you!&#x20;
+
+<a href="https://github.com/DistantLandsProductions/cozy-documentation" class="button secondary" data-icon="github">View on GitHub</a>

@@ -82,7 +82,7 @@ For example, if you want to increase the density of the fog, you can add a [fog.
 
 {% columns %}
 {% column %}
-<figure><img src="../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}

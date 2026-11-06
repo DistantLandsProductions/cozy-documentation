@@ -8,6 +8,7 @@
 
 * [Project Setup](setup/project-setup.md)
 * [Scene Setup](setup/scene-setup.md)
+* [Setting Your Vibe](setup/setting-your-vibe.md)
 
 ## Using Cozy
 
