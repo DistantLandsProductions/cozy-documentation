@@ -1,3 +1,8 @@
+---
+tags:
+  - profile
+---
+
 # Forecast Profile
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Profiles/ForecastProfile.cs" class="button secondary" data-icon="code">View on GitHub</a>
@@ -8,15 +13,15 @@ A forecast profile defines which weather states are allowed to appear next and u
 
 The forecast profile stores a list of `ForecastableWeather` entries. Each entry describes:
 
-- a weather profile
-- the rules that determine when it can forecast next
-- optional modifier rules such as forced inclusion, forced exclusion, or adjusted chance
+* a weather profile
+* the rules that determine when it can forecast next
+* optional modifier rules such as forced inclusion, forced exclusion, or adjusted chance
 
 This allows you to encode weather logic like:
 
-- rain may only follow cloudy or stormy weather
-- snow may be excluded during summer
-- a storm profile may become much less likely on certain favorable days
+* rain may only follow cloudy or stormy weather
+* snow may be excluded during summer
+* a storm profile may become much less likely on certain favorable days
 
 ## Typical use cases
 
@@ -40,11 +45,11 @@ public class ForecastProfile : CozyProfile, ISerializationCallbackReceiver
 
 Key members:
 
-- `List<ForecastableWeather> profiles`
-- `int forecastAheadAmount`
-- `HashSet<WeatherProfile> ForecastableWeatherProfiles`
-- `WeatherProfile RandomWeatherProfile`
-- `ForecastableWeather GetForecastingBehavior(WeatherProfile profile)`
+* `List<ForecastableWeather> profiles`
+* `int forecastAheadAmount`
+* `HashSet<WeatherProfile> ForecastableWeatherProfiles`
+* `WeatherProfile RandomWeatherProfile`
+* `ForecastableWeather GetForecastingBehavior(WeatherProfile profile)`
 
 ### `ForecastableWeather`
 
@@ -92,7 +97,6 @@ ForecastProfile.ForecastableWeather behavior = forecast.GetForecastingBehavior(r
 
 ## Notes
 
-- Forecast logic is more about viable transitions than immediate conditions.
-- `ForecastProfile` is a higher-level rule set, while `WeatherProfile` is the actual state definition.
-- The forecast can be used with random selection or weighted selection depending on your weather system configuration.
-
+* Forecast logic is more about viable transitions than immediate conditions.
+* `ForecastProfile` is a higher-level rule set, while `WeatherProfile` is the actual state definition.
+* The forecast can be used with random selection or weighted selection depending on your weather system configuration.

@@ -1,3 +1,8 @@
+---
+tags:
+  - profile
+---
+
 # Atmosphere Profile
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Profiles/AtmosphereProfile.cs" class="button secondary" data-icon="code">View on GitHub</a>
@@ -32,9 +37,9 @@ public class AtmosphereProfile : CozyProfile
 
 Key members:
 
-- `presetParameters`
-- `List<AtmosphereOverride> overrides`
-- `void OnValidate()`
+* `presetParameters`
+* `List<AtmosphereOverride> overrides`
+* `void OnValidate()`
 
 `AtmosphereOverride` items are serialized through the `AtmosphereOverridesList` attribute, which exposes the override list in the inspector and lets the runtime rebuild the atmosphere model when the profile changes.
 
@@ -51,7 +56,6 @@ if (profile != null)
 
 ## Notes
 
-- Atmosphere profiles are output-focused: they define how the environment should look.
-- They work alongside weather profiles, not as a replacement for them.
-- The profile can be updated at edit time and re-applied through the connected atmosphere module.
-
+* Atmosphere profiles are output-focused: they define how the environment should look.
+* They work alongside weather profiles, not as a replacement for them.
+* The profile can be updated at edit time and re-applied through the connected atmosphere module.

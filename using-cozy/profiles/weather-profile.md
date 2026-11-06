@@ -1,3 +1,8 @@
+---
+tags:
+  - profile
+---
+
 # Weather Profile
 
 <a href="https://github.com/DistantLandsProductions/com.distantlands.cozyweather.core/blob/main/Runtime/Profiles/WeatherProfile.cs" class="button secondary" data-icon="code">View on GitHub</a>
@@ -8,12 +13,12 @@ A weather profile describes one concrete weather state in COZY, such as clear sk
 
 Weather profiles are the main runtime data used by the weather system. Each profile stores:
 
-- a duration range (`MinTime` and `MaxTime`)
-- a chance value used for random or weighted selection
-- a weather tag (`WeatherTag`)
-- optional restrictions for what can follow it in a forecast
-- one or more FX profiles to play when the weather is active
-- optional lateral weather shifts for dynamic condition-driven transitions
+* a duration range (`MinTime` and `MaxTime`)
+* a chance value used for random or weighted selection
+* a weather tag (`WeatherTag`)
+* optional restrictions for what can follow it in a forecast
+* one or more FX profiles to play when the weather is active
+* optional lateral weather shifts for dynamic condition-driven transitions
 
 The profile is primarily a state definition: when the weather module selects it, the profile's FX and metadata become the active state for the scene.
 
@@ -39,14 +44,14 @@ public class WeatherProfile : CozyProfile, IStateMachineProfile
 
 Key members:
 
-- `MeridiemTimeDelta MinTime`
-- `MeridiemTimeDelta MaxTime`
-- `float Chance`
-- `WeatherTag Tag`
-- `WeatherProfile[] forecastNext`
-- `ForecastModifierMethod forecastModifierMethod`
-- `float GetChance(ConditionSnapshot conditions)`
-- `void Play(float weightVal)`
+* `MeridiemTimeDelta MinTime`
+* `MeridiemTimeDelta MaxTime`
+* `float Chance`
+* `WeatherTag Tag`
+* `WeatherProfile[] forecastNext`
+* `ForecastModifierMethod forecastModifierMethod`
+* `float GetChance(ConditionSnapshot conditions)`
+* `void Play(float weightVal)`
 
 ### `WeatherTag`
 
@@ -85,7 +90,6 @@ if (clearWeather != null)
 
 ## Notes
 
-- Weather profiles are state assets, not mutable runtime objects.
-- A profile can play custom FX by attaching one or more `CozyFXProfile` assets.
-- The `forecastNext` data and `ForecastProfile` work together to generate believable transitions.
-
+* Weather profiles are state assets, not mutable runtime objects.
+* A profile can play custom FX by attaching one or more `CozyFXProfile` assets.
+* The `forecastNext` data and `ForecastProfile` work together to generate believable transitions.
