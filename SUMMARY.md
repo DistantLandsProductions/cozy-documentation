@@ -3,6 +3,7 @@
 * [Welcome!](README.md)
 * [Release Notes](release-notes.md)
 * [API Changes](api-changes.md)
+* [Upgrade Guide](upgrade-guide.md)
 
 ## Setup
 
