@@ -10,11 +10,9 @@ A **profile** in COZY is a static bit of data stored as a scriptable object to b
 
 This section covers the concrete profile assets that drive COZY's major systems:
 
-- [Weather Profile](weather-profile.md) — defines the active state, timing, chances, and weather-specific FX for a single weather condition.
-- [Atmosphere Profile](atmosphere-profile.md) — stores a list of atmospheric overrides used to shape the scene atmosphere.
-- [Climate Profile](climate-profile.md) — defines seasonal temperature, humidity, pressure, and related climate ranges across the year.
-- [Ambience Profile](ambience-profile.md) — drives non-weather ambient states and associated FX.
-- [Forecast Profile](forecast-profile.md) — determines which weather profiles can follow one another and how forecast sequencing works.
-- [FX Profiles](fx-profiles/README.md) — reusable effect containers attached to weather and ambience profiles.
-
-These pages intentionally document the user-facing profile types and omit interface contracts.
+* [Weather Profile](weather-profile.md) — defines the active state, timing, chances, and weather-specific FX for a single weather condition.
+* [Atmosphere Profile](atmosphere-profile.md) — stores a list of atmospheric overrides used to shape the scene atmosphere.
+* [Climate Profile](climate-profile.md) — defines seasonal temperature, humidity, pressure, and related climate ranges across the year.
+* [Ambience Profile](ambience-profile.md) — drives non-weather ambient states and associated FX.
+* [Forecast Profile](forecast-profile.md) — determines which weather profiles can follow one another and how forecast sequencing works.
+* [FX Profiles](fx-profiles/) — reusable effect containers attached to weather and ambience profiles.
